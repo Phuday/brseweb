@@ -39,15 +39,15 @@
 }
 .banner-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  bottom: 0;
+  left: 0;
+  text-align: left;
   width: 100%;
   display: flex;
   flex-direction: column;
 
   &-content {
+    padding: 20px;
     h2 {
       font-family: $eng-font;
       color: $green-light;
@@ -82,8 +82,8 @@
       font-size: 35px;
       font-family: $ja-font;
       width: 200px;
-      margin: auto;
       line-height: 1.7;
+      text-align: center;
       background-color: $green-light;
       border-radius: $border-radius;
       margin-top: 20px;

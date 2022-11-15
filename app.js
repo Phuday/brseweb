@@ -46,4 +46,15 @@ $(document).ready(function () {
     $('.accordion-title').not(this).parent().removeClass('active');
     $('.accordion-desc').removeClass('active');
   });
+
+  // slick slider
+  $('.quote-container').slick({
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>",
+  });
 });

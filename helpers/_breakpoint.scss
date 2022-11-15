@@ -37,3 +37,20 @@
     transform: translate(-50%, -50%);
   }
 }
+@mixin flexbox($align-items: stretch, $justify-content: flex-start, $direction: row, $flex: flex, $wrap: nowrap) {
+  display: $flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin textClamp($rows: 1, $size: 100%) {
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: $size;
+  max-width: $size;
+  word-break: break-word;
+}

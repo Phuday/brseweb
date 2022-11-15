@@ -658,13 +658,15 @@ body::-webkit-scrollbar-thumb {
 }
 .banner-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  bottom: 0;
+  left: 0;
+  text-align: left;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.banner-text-content {
+  padding: 20px;
 }
 .banner-text-content h2 {
   font-family: "Poppins", sans-serif;
@@ -703,8 +705,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 35px;
   font-family: "Noto Sans JP", sans-serif;
   width: 200px;
-  margin: auto;
   line-height: 1.7;
+  text-align: center;
   background-color: #00633d;
   border-radius: 8px;
   margin-top: 20px;
@@ -1849,9 +1851,166 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.quote {
+  padding: 65px 0;
+  background-color: #f3f3f3;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 767px) {
+  .quote {
+    padding-bottom: 100px;
+    padding-top: 40px;
+    margin-top: 60px;
+  }
+}
+.quote-icon {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  right: 20%;
+}
+@media only screen and (max-width: 767px) {
+  .quote-icon {
+    width: 100px;
+  }
+}
+.quote-item {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  .quote-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.quote-img {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 767px) {
+  .quote-img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+  }
+}
+.quote-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 767px) {
+  .quote-img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.quote-info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.quote-desc {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #635f85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  word-break: break-word;
+}
+@media only screen and (max-width: 767px) {
+  .quote-desc {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+.quote-author {
+  font-size: 24px;
+  position: relative;
+  padding-left: 70px;
+}
+@media only screen and (max-width: 767px) {
+  .quote-author {
+    font-size: 18px;
+  }
+}
+.quote-author:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f03a2d;
+  font-family: "Poppins", sans-serif;
+  width: 60px;
+  height: 4px;
+  left: 0;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-arrow {
+  background-color: transparent;
+  border: 0;
+  color: #635f85;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 0;
+}
+@media only screen and (max-width: 767px) {
+  .slick-prev {
+    display: none;
+  }
+}
+
+.slick-next {
+  right: 0;
+}
+@media only screen and (max-width: 767px) {
+  .slick-next {
+    display: none;
+  }
+}
+
 footer {
   display: block;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 footer .footer-top {
   background-color: #e5f3ed;
