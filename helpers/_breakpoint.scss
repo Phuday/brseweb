@@ -1,0 +1,39 @@
+@import './variables';
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+@mixin mobileSmall {
+  @media only screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+@mixin tablet-mini {
+  @media only screen and (max-width: $tablet-mini-width) {
+    @content;
+  }
+}
+@mixin absoluteCenter($direction: 'left', $position: absolute) {
+  position: $position;
+  // @if $variable == {}
+  @if $direction == 'left' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $direction == 'top' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $direction == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

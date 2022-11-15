@@ -1,0 +1,137 @@
+.opencampus {
+  width: 100%;
+  height: 650px;
+  border-top: 1px solid $body-gray-color;
+  border-bottom: 1px solid $body-gray-color;
+  position: relative;
+  display: flex;
+  .campus-logo {
+    position: absolute;
+    width: 400px;
+    right: 10%;
+    top: 65%;
+    transform: rotate(30deg);
+    @include tablet-mini {
+      width: 200px;
+      top: 70%;
+      right: 8%;
+    }
+    @include mobile {
+      width: 150px;
+      top: 65%;
+      transform: rotate(20deg);
+    }
+  }
+  .campus-human {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 400px;
+    height: auto;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: 'FlipH';
+    @include tablet-mini {
+      width: 250px;
+      left: 0;
+    }
+    @include mobile {
+      width: 250px;
+    }
+  }
+  .wrapper {
+    background-image: url('../assets/img/opencampus/campus.gif');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  @include tablet {
+    height: 600px;
+  }
+  @include tablet-mini {
+    height: 470px;
+  }
+  @include mobile {
+    height: 450px;
+  }
+  .opencampus-img {
+    display: block;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      display: block;
+      margin-top: 100px;
+      width: 600px;
+      padding: 20px;
+      background-color: rgba($color: $white-color, $alpha: 0.6);
+      @include tablet-mini {
+        width: 500px;
+      }
+      @include mobile {
+        width: 350px;
+        margin-top: 100px;
+      }
+    }
+  }
+  .opencampus-text {
+    font-size: 40px;
+    color: $green-light;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    background-color: rgba($color: $white-color, $alpha: 0.6);
+    @include tablet {
+      font-size: 30px;
+    }
+    @include tablet-mini {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  .opencampus-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 160px;
+    color: $white-color;
+    font-size: 25px;
+    transition: 0.25s ease;
+    background-color: $black-color;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    @include tablet-mini {
+      padding: 20px 80px;
+      font-size: 20px;
+    }
+    @include mobile {
+      padding: 15px 60px;
+      font-size: 16px;
+      width: 250px;
+      bottom: 16%;
+    }
+    i {
+      position: absolute;
+      right: 25%;
+      transition: 0.25s ease;
+    }
+    &:hover {
+      background-color: #333;
+      transition: 0.25s ease;
+      i {
+        transform: translateX(10px);
+        transition: 0.25s ease;
+      }
+    }
+  }
+}

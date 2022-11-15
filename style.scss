@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
+@import './helpers/reset';
+@import './helpers/global';
+@import './helpers/variables';
+@import './helpers/breakpoint';
+
+@import './layout/header';
+@import './layout/banner';
+@import './layout/about';
+@import './layout/course';
+@import './layout/video';
+@import './layout/support';
+@import './layout/campus';
+@import './layout/money';
+@import './layout/footer';

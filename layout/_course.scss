@@ -1,0 +1,529 @@
+// .course-container {
+//   display: flex;
+//   gap: 20px;
+//   flex-wrap: nowrap;
+//   margin-top: 100px;
+//   @include mobile {
+//     display: flex;
+//     overflow-x: scroll;
+//     padding: 0 12px;
+//     scroll-snap-type: x mandatory;
+//     scroll-padding: 12px;
+//   }
+//   .course {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+//     overflow-x: hidden;
+//     transition: 0.25s linear;
+//     border-radius: $border-radius;
+//     margin-top: 20px;
+//     @include mobile {
+//       flex: 0 0 90%;
+//       scroll-snap-align: center;
+//     }
+//     &::after {
+//       position: absolute;
+//       content: '';
+//       top: 0;
+//       left: 0;
+//       bottom: 0;
+//       background-color: $desc-bgc;
+//       width: 100%;
+//       display: block;
+//       height: 100%;
+//       transform: translateX(-100%);
+//       transition: 0.25s linear;
+//       background-image: $bg-img;
+//     }
+
+//     &-img {
+//       display: block;
+//       height: 600px;
+//       object-fit: cover;
+//       width: 100%;
+//       @include mobile {
+//         height: 500px;
+//       }
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//     &-content {
+//       position: absolute;
+//       z-index: 10;
+//       padding: 10px;
+//       transition: 0.25s linear;
+//       transform: translateX(-100%);
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       &-inner {
+//         &_title {
+//           margin-top: 50px;
+//           font-size: 25px;
+//           font-weight: bold;
+//           font-family: $ja-font;
+//           color: $second-color;
+//           margin-bottom: 20px;
+//         }
+//         &_desc {
+//           color: $white-color;
+//           font-size: 18px;
+//           line-height: 1.5;
+//           padding: 10px;
+//         }
+//       }
+//       &-icon {
+//         justify-content: center;
+//         display: flex;
+//         i {
+//           font-size: 40px;
+//           width: 70px;
+//           height: 70px;
+//           align-items: center;
+//           color: $second-color;
+//           display: flex;
+//           justify-content: center;
+//           margin-bottom: 50px;
+//           padding: 30px;
+//           border: 2px solid $second-color;
+//           border-radius: 50%;
+//         }
+//       }
+//     }
+//   }
+//   .course:hover {
+//     transform: translateY(-10px);
+//     transition: 0.25s linear;
+//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+//       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+//     @include mobile {
+//       box-shadow: none;
+//     }
+//     &::after {
+//       transform: translateX(0);
+//     }
+//     .course-content {
+//       transform: translateX(0);
+//     }
+//   }
+// }
+
+.course {
+  display: none;
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+  @include mobile {
+    margin-top: 270px;
+    flex-direction: column;
+  }
+  &-left {
+    width: 40%;
+    position: relative;
+    @include mobile {
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+    }
+    .arrow-img {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      transform: rotate(210deg);
+      right: 0;
+      bottom: 20%;
+      z-index: 100;
+      @include tablet {
+        width: 150px;
+        height: 150px;
+      }
+      @include tablet-mini {
+        width: 100px;
+        height: 100px;
+      }
+      @include mobile {
+        right: 20%;
+        bottom: 25%;
+      }
+    }
+    &-title {
+      font-size: 60px;
+      position: relative;
+      color: $text-color;
+      margin-bottom: 30px;
+      @include tablet {
+        font-size: 45px;
+      }
+      @include tablet-mini {
+        font-size: 35px;
+      }
+      @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+      }
+
+      i {
+        font-size: 50px;
+        color: $green-light;
+        @include tablet {
+          font-size: 40px;
+        }
+        @include tablet-mini {
+          font-size: 30px;
+        }
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+      span {
+        margin: 10px;
+        display: inline-block;
+        font-size: 80px;
+        color: $green-light;
+        font-weight: 500;
+        @include tablet {
+          font-size: 60px;
+        }
+        @include tablet-mini {
+          font-size: 45px;
+        }
+        @include mobile {
+          font-size: 35px;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 5px;
+        background-color: $button-color;
+        bottom: -15px;
+        left: 30px;
+        @include tablet {
+          width: 122px;
+        }
+        @include tablet-mini {
+          width: 80px;
+        }
+        @include mobile {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &-info {
+      i {
+        font-size: 26px;
+        color: $second-color;
+        margin-right: 10px;
+      }
+      font-size: 20px;
+      padding: 20px;
+      line-height: 1.4;
+      color: $text-gray;
+      @include tablet-mini {
+        font-size: 16px;
+        padding: 10px;
+      }
+      @include mobile {
+        padding: 0;
+      }
+    }
+    .course-left-campus {
+      display: flex;
+      position: absolute;
+      bottom: 10px;
+      right: -10%;
+      z-index: 100;
+      @include mobile {
+        right: 13%;
+      }
+    }
+    .campus-text {
+      border: 1px solid;
+      border-right: 0;
+    }
+    .campus-link {
+      display: flex;
+      text-decoration: none;
+      font-family: $eng-font;
+      background-color: $green-light;
+      color: $white-color;
+      transition: 0.25s linear;
+      position: relative;
+      overflow: hidden;
+      span {
+        transition: 0.25s linear;
+        z-index: 100;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $second-color;
+        transition: 0.25s linear;
+        transform: translateY(100%);
+      }
+      &:hover {
+        &::after {
+          transform: translateY(0);
+        }
+        span {
+          color: $text-color;
+          transition: 0.25s linear;
+        }
+      }
+    }
+    .campus-text {
+      align-items: center;
+      img {
+        display: inline-block;
+        width: 300px;
+        height: auto;
+        @include tablet {
+          width: 250px;
+        }
+        @include tablet-mini {
+          width: 160px;
+        }
+      }
+    }
+    .campus-text,
+    .campus-link {
+      font-size: 30px;
+      align-items: center;
+      padding: 50px 40px;
+      @include tablet {
+        font-size: 26px;
+        padding: 28px 22px;
+      }
+      @include tablet-mini {
+        font-size: 20px;
+        padding: 28px 30px;
+      }
+    }
+  }
+  &-right {
+    width: 50%;
+    @include tablet-mini {
+      width: 55%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    .course-img-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      @include mobile {
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 10px;
+        width: 100%;
+        padding: 24px;
+      }
+      .course-img {
+        border-radius: $border-radius;
+        overflow: hidden;
+        position: relative;
+        box-shadow: $box-shadow;
+        width: 150px;
+        height: 500px;
+        transition: 0.5s all;
+        object-fit: cover;
+        @include tablet {
+          height: 460px;
+        }
+        @include tablet-mini {
+          height: 350px;
+        }
+        @include mobile {
+          flex: 0 0 100%;
+          scroll-snap-align: center;
+        }
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background-color: $bg-overlay;
+        }
+        &:hover {
+          .course-img-title {
+            opacity: 0;
+            transition: 0.25s linear;
+          }
+          .course-img-desc {
+            transform: translateX(0);
+            transition: 0.25s linear;
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          transition: 0.25s linear;
+          object-fit: cover;
+        }
+        &.active {
+          width: 350px;
+          height: 500px;
+          @include tablet {
+            height: 460px;
+          }
+          @include tablet-mini {
+            height: 350px;
+          }
+        }
+        img:hover {
+          transition: 1s linear;
+          transform: scale(1.4);
+        }
+        &.box-hover {
+          width: 350px;
+          height: 500px;
+          @include tablet {
+            height: 460px;
+          }
+          @include tablet-mini {
+            height: 350px;
+          }
+        }
+        &-title {
+          transition: 0.25s linear;
+          pointer-events: none;
+          font-weight: bold;
+          span {
+            color: $second-color;
+          }
+          .course-img-box {
+            position: absolute;
+            width: 100%;
+            bottom: 10%;
+            height: 120px;
+            background-color: $green-light;
+            @include mobile {
+              width: 120px;
+              right: 0;
+            }
+          }
+          h3 {
+            position: absolute;
+            font-size: 35px;
+            color: $white-color;
+            right: 10px;
+            top: 20%;
+            writing-mode: vertical-rl;
+            transform: rotate(0);
+            @include tablet {
+              font-size: 30px;
+            }
+            @include tablet-mini {
+              font-size: 25px;
+            }
+            @include mobile {
+              font-size: 25px;
+            }
+          }
+          p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+        }
+        &-title.course1 {
+          .course-img-box {
+            position: absolute;
+            width: 120px;
+            top: 8%;
+            right: 0;
+            height: 120px;
+            background-color: $green-light;
+            @include tablet-mini {
+              width: 100px;
+              height: 100px;
+            }
+            @include mobile {
+              top: 8%;
+            }
+          }
+          h3 {
+            position: absolute;
+            font-size: 35px;
+            color: $white-color;
+            top: 20%;
+            right: 2%;
+            transform: rotate(0);
+            @include tablet {
+              font-size: 30px;
+            }
+            @include tablet-mini {
+              font-size: 25px;
+            }
+            @include mobile {
+              font-size: 30px;
+              top: 20%;
+            }
+            span {
+              color: $second-color;
+              font-weight: bold;
+            }
+          }
+        }
+        &-desc {
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          color: $white-color;
+          background-image: $bg-img;
+          width: 100%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 20px;
+          padding: 20px 10px;
+          line-height: 1.5;
+          height: 100%;
+          transition: 0.25s linear;
+          transform: translateX(-100%);
+          @include tablet {
+            font-size: 16px;
+          }
+          @include tablet {
+            font-size: 13px;
+          }
+          @include mobile {
+            font-size: 18px;
+            padding: 20px;
+          }
+          &::after {
+            position: absolute;
+            top: 0;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $bg-overlay;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
