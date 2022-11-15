@@ -160,7 +160,8 @@ body::-webkit-scrollbar-thumb {
 
 .left-to-right.start {
   transform: translateX(0);
-  animation: leftRight 0.5s linear;
+  -webkit-animation: leftRight 0.5s linear;
+          animation: leftRight 0.5s linear;
 }
 
 .bot-to-top {
@@ -169,7 +170,8 @@ body::-webkit-scrollbar-thumb {
 
 .bot-to-top.start {
   transform: translateY(0);
-  animation: botTop 0.5s linear;
+  -webkit-animation: botTop 0.5s linear;
+          animation: botTop 0.5s linear;
 }
 
 .right-to-left {
@@ -178,7 +180,8 @@ body::-webkit-scrollbar-thumb {
 
 .right-to-left.start {
   transform: translateX(0);
-  animation: rightLeft 0.5s linear;
+  -webkit-animation: rightLeft 0.5s linear;
+          animation: rightLeft 0.5s linear;
 }
 
 .zoom {
@@ -190,6 +193,16 @@ body::-webkit-scrollbar-thumb {
   transform: unset;
 }
 
+@-webkit-keyframes botTop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes botTop {
   0% {
     opacity: 0;
@@ -199,10 +212,28 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+@-webkit-keyframes leftRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes leftRight {
   0% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rightLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
@@ -628,23 +659,40 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   position: absolute;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   opacity: 0;
   transform: scale(1.2);
-  animation: animate 24s infinite;
-  object-fit: cover;
+  -webkit-animation: animate 24s infinite;
+          animation: animate 24s infinite;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner img:nth-child(1) {
-  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 .banner img:nth-child(2) {
-  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 .banner img:nth-child(3) {
-  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 .banner img:nth-child(4) {
-  animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+@-webkit-keyframes animate {
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes animate {
@@ -831,7 +879,8 @@ body::-webkit-scrollbar-thumb {
 .about-container .about-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .course {
@@ -1104,7 +1153,8 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 767px) {
   .course-right .course-img-container {
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
     scroll-padding: 10px;
     width: 100%;
     padding: 24px;
@@ -1118,7 +1168,8 @@ body::-webkit-scrollbar-thumb {
   width: 150px;
   height: 500px;
   transition: 0.5s all;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 1024px) {
   .course-right .course-img-container .course-img {
@@ -1158,7 +1209,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   transition: 0.25s linear;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .course-right .course-img-container .course-img.active {
   width: 350px;
@@ -1219,7 +1271,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   right: 10px;
   top: 20%;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   transform: rotate(0);
 }
 @media only screen and (max-width: 1024px) {
@@ -1609,7 +1662,8 @@ body::-webkit-scrollbar-thumb {
 .support .support-container .support-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .support .support-container .support-item:hover .overlaysup {
   opacity: 1;
@@ -1705,9 +1759,6 @@ body::-webkit-scrollbar-thumb {
   left: 10%;
   width: 400px;
   height: auto;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
@@ -1913,7 +1964,8 @@ body::-webkit-scrollbar-thumb {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 767px) {
   .quote-img img {
@@ -2108,7 +2160,8 @@ footer .footer-main__map img {
   footer .footer-main__map img {
     width: 100%;
     height: 300px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 footer .footer-main__assess {
@@ -2144,6 +2197,4 @@ footer .footer-bottom {
   justify-content: center;
   align-items: center;
   color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
