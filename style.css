@@ -1732,6 +1732,23 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   display: flex;
 }
+.opencampus .campus-bg {
+  position: absolute;
+  max-width: 900px;
+  z-index: -10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .opencampus .campus-bg {
+    max-width: 400px;
+  }
+}
+.opencampus .campus-bg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -10;
+}
 .opencampus .campus-logo {
   position: absolute;
   width: 400px;
@@ -1773,12 +1790,6 @@ body::-webkit-scrollbar-thumb {
   .opencampus .campus-human {
     width: 250px;
   }
-}
-.opencampus .wrapper {
-  background-image: url("../assets/img/opencampus/campus.gif");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
 }
 @media only screen and (max-width: 1024px) {
   .opencampus {
