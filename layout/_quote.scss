@@ -75,6 +75,12 @@
     font-size: 24px;
     position: relative;
     padding-left: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    span {
+      margin-right: 10px;
+    }
     @include mobile {
       font-size: 18px;
     }

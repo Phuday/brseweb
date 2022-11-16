@@ -12,10 +12,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="/assets/uicons/css/uicons-regular-rounded.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div class="highlight">D</div>
+        <div>A</div>
+        <div>O</div>
+        <div class="highlight">L</div>
+      </div>
+    </div>
+    <div class="progress"></div>
     <div class="header-top">
       <div class="wrapper">
         <div class="header-top-content">
@@ -44,19 +57,19 @@
         <ul class="header-info">
           <li class="header-info-item">
             <a class="header-info-item__link" href=""
-              ><i class="header-info-item__link-icon fa-solid fa-location-dot"></i>アクセス</a
+              ><i class="header-info-item__link-icon fi fi-rs-map-marker"></i>アクセス</a
             >
           </li>
           <li class="header-info-item">
             <a class="header-info-item__link" href=""
-              ><i class="header-info-item__link-icon fa-solid fa-phone"></i>06-6866-0808</a
+              ><i class="header-info-item__link-icon fi fi-rr-phone-call"></i>06-6866-0808</a
             >
           </li>
           <li class="header-info-item">
             <div class="header-info-item__lang-inner">
               <div class="header-info-item__lang-inner-icon">
-                <i class="language-icon-pc fa-solid fa-earth-asia"></i>
-                <i class="language-icon-pc-caret fa-solid fa-caret-down"></i>
+                <i class="language-icon-pc fi fi-rr-world"></i>
+                <i class="language-icon-pc-caret fi fi-rr-caret-down"></i>
               </div>
               <span>Language</span>
               <ul class="language-pc">
@@ -70,7 +83,7 @@
 
         <!-- header mobile menu layout -->
         <div class="hamburger">
-          <i class="menu-toggle fa-solid fa-bars-staggered"></i>
+          <i class="menu-toggle fi fi-rr-list"></i>
         </div>
         <div class="header-mobile">
           <ul class="header-mobile-list">
@@ -81,16 +94,16 @@
           </ul>
           <ul class="header-mobile-contact">
             <li class="header-mobile-contact__item">
-              <a class="header-mobile-contact__item-link" href=""><i class="fa-solid fa-location-dot"></i>アクセス</a>
+              <a class="header-mobile-contact__item-link" href=""><i class="fi fi-rr-map-marker"></i>アクセス</a>
             </li>
             <li class="header-mobile-contact__item">
-              <a class="header-mobile-contact__item-link" href=""><i class="fa-solid fa-phone"></i>06-6866-0808</a>
+              <a class="header-mobile-contact__item-link" href=""><i class="fi fi-rr-phone-call"></i>06-6866-0808</a>
             </li>
             <li class="header-mobile-contact__item">
               <div class="header-mobile-contact__item-inner">
-                <i class="language-icon fa-solid fa-earth-asia"></i>
+                <i class="language-icon fi fi-rr-world"></i>
                 <span>Language</span>
-                <i class="language-icon-caret fa-solid fa-caret-down"></i>
+                <i class="language-icon-caret fi-rr-angle-small-down"></i>
                 <ul class="language">
                   <li class="language-item"><a class="language-item-link" href="">English</a></li>
                   <li class="language-item"><a class="language-item-link" href="">English</a></li>
@@ -138,7 +151,6 @@
       <div class="banner-text">
         <div class="banner-text-content">
           <h2><span>C</span>HUO <span>C</span>OLLEGE OF <span>T</span>ECHNOLOGY <span>O</span>SAKA</h2>
-          <p>留学生対象</p>
         </div>
       </div>
     </div>
@@ -176,10 +188,7 @@
             </div>
           </div>
           <div class="about-img">
-            <img
-              src="https://cdn.dribbble.com/users/2493316/screenshots/14030448/media/8b87a18633c28586e4a315bcdaab031b.gif"
-              alt=""
-            />
+            <img src="./assets/img/logo/about.gif" alt="" />
           </div>
         </div>
       </div>
@@ -359,7 +368,7 @@
     <div class="opencampus">
       <img class="campus-bg" src="./assets/img/opencampus/campus.gif" alt="" />
       <div class="campus-human">
-        <img src="./assets/img/opencampus/123123.png" alt="" />
+        <img src="./assets/img/opencampus/human.png" alt="" />
       </div>
       <div class="campus-logo">
         <img src="./assets/img/logo/ttl_campus.png" alt="" />
@@ -371,7 +380,7 @@
         <h2 class="opencampus-text">オープンキャンパスは 来校型とWEB型があります。</h2>
         <button class="opencampus-btn">
           申し込み
-          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fi fi-rr-arrow-square-right"></i>
         </button>
       </div>
     </div>
@@ -384,34 +393,7 @@
         <p class="wrapper-desc">中央工学校OSAKAは、教育に対する総合的なサポートを目指しています</p>
       </div>
     </div>
-    <!-- <div class="support-container">
-      <div class="support-item">
-        <img src="./assets/img/Black/Numbers/1.png" alt="" class="sub-number" />
-        <img src="./assets/img/sup/suppot1 (2).JPG" alt="" class="support-item__img" />
-        <div class="chat-container">
-          <h2>ビザ更新の手続きなどをする時、ご不明な点があったら、先生に相談することができます。</h2>
-        </div>
-      </div>
-      <div class="support-item">
-        <img src="./assets/img/Black/Numbers/2.png" alt="" class="sub-number" />
-        <img src="./assets/img/sup/schollarship2.jpg" alt="" class="support-item__img" />
-        <div class="chat-container">
-          <h2>
-            前期の学部学生で、学業成績基準および学業成績以外
-            の基準の両方を満たした者は、各学年1名以内）学費を15万円免除されています。
-          </h2>
-        </div>
-      </div>
-      <div class="support-item reverse">
-        <img src="./assets/img/Black/Numbers/3.png" alt="" class="sub-number" />
-        <img src="./assets/img/sup/suppot4.jpg" alt="" class="support-item__img" />
-        <div class="chat-container">
-          <h2>
-            就職活動支援経験が豊かな先生からアドバイスや指導をしてもらえます。また、必要な場合は先生がインターンシップに一緒に参加することもあります。
-          </h2>
-        </div>
-      </div>
-    </div> -->
+
     <div class="support">
       <div class="support-container">
         <div class="support-item">
@@ -421,22 +403,24 @@
               <p>遠いところか大阪へ引っ越ししても、部屋のことがご心配なく、先生たちは部屋さがしをサポートします。</p>
             </div>
           </div>
-          <img src="./assets/img/sup/class4.jpg" alt="" />
+          <img src="./assets/img/sup/home.JPG" alt="" />
         </div>
 
         <div class="support-item">
           <div class="overlaysup">
             <div class="overlaysup-text">
-              <h2>4.懇切な先生</h2>
-              <p>学校から会社説明会を紹介して頂き、いつも懇切な先生のおかげで、皆さんがほとんど就職できました。</p>
+              <h2>2.通学費用</h2>
+              <p>
+                学割があります。学校から通学定期の証明書がもらえるので、それを使って通学定期券を買うことができます。
+              </p>
             </div>
           </div>
-          <img src="./assets/img/sup/suppot1 (3).JPG" alt="" />
+          <img src="./assets/img/sup/ticket.JPG" alt="" />
         </div>
         <div class="support-item">
           <div class="overlaysup">
             <div class="overlaysup-text">
-              <h2>5.手続きのお手伝い</h2>
+              <h2>3.手続きのお手伝い</h2>
               <p>ビザ更新の手続きなどをする時、ご不明な点があったら、先生に相談することができます。</p>
             </div>
           </div>
@@ -445,9 +429,9 @@
         <div class="support-item">
           <div class="overlaysup">
             <div class="overlaysup-text">
-              <h2>6.就職活動</h2>
+              <h2>4.就職活動</h2>
               <p>
-                就職活動支援経験が豊かな先生からアドバイスや指導をしてもらえます。また、必要な場合は先生がインターンシップに一緒に参加することもあります。
+                学校は仕事を紹介したり、就職活動支援経験が豊かな先生からアドバイスや指導をしてもらえます。また、学生の要望に応じて学校が求人紹介してくれます。
               </p>
             </div>
           </div>
@@ -487,57 +471,68 @@
       <div class="wrapper">
         <div class="quote-container">
           <div class="quote-item">
-            <div class="quote-img"><img src="./assets/img/koe/chien.JPG" /></div>
+            <div class="quote-img"><img src="./assets/img/koe/joshi.jpeg" /></div>
             <div class="quote-info">
               <p class="quote-desc">
                 先生たちは親切です。 学校の設備は新しく現代的です。 国際的なクラスなので色々な国との文化交流ができます。
                 日本語ももっと上手になります。
               </p>
-              <span class="quote-author">Nguyen Cong Chien</span>
+              <div class="quote-author"><span>Johi Raj</span><img src="./assets/img/flag/nepal.png" alt="" /></div>
             </div>
           </div>
           <div class="quote-item">
-            <div class="quote-img"><img src="./assets/img/koe/2.jpg" /></div>
+            <div class="quote-img"><img src="./assets/img/koe/ninh.jpeg" /></div>
             <div class="quote-info">
               <p class="quote-desc">
                 ひとりぼっちではなく先生たちが、しっかりサポートしてくれますよ！求人情報、面接練習、説明会などを先生たちがきちんとサポートしてくれます。
               </p>
-              <span class="quote-author">Nguyen Thi Ninh</span>
+              <div class="quote-author">
+                <span>Nguyen Thi Ninh</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="quote-item">
             <div class="quote-img"><img src="./assets/img/koe/kar.JPG" /></div>
             <div class="quote-info">
               <p class="quote-desc">N2 (N1)以外にBJTとか、TOEICとか、自動車運転免許など資格を取った方がいい！</p>
-              <span class="quote-author">Karki Prabhakar</span>
+
+              <div class="quote-author">
+                <span>Karki Prabhakar</span><img src="./assets/img/flag/nepal.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="quote-item">
-            <div class="quote-img"><img src="./assets/img/koe/4.jpg" /></div>
+            <div class="quote-img"><img src="./assets/img/koe/tra.jpg" /></div>
             <div class="quote-info">
               <p class="quote-desc">
                 学生たちは仲良くして、授業に積極的に参加し、楽しく勉強できました。実際の作業を体験できて、良かったです。
               </p>
-              <span class="quote-author">Nguyen Thi Tra</span>
+              <div class="quote-author">
+                <span>Nguyen Thi Tra</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="quote-item">
-            <div class="quote-img"><img src="./assets/img/koe/5.jpg" /></div>
+            <div class="quote-img"><img src="./assets/img/koe/minh.jpg" /></div>
             <div class="quote-info">
               <p class="quote-desc">
                 授業以外では、ボランティア活動、研修旅行、スポーツ大会などという課外活動がたくさんがあります。楽しかったです。
               </p>
-              <span class="quote-author">Nguyen Van Minh</span>
+              <div class="quote-author">
+                <span>Nguyen Van Minh</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="quote-item">
-            <div class="quote-img"><img src="./assets/img/koe/1.jpg" /></div>
+            <div class="quote-img"><img src="./assets/img/koe/hansi.jpg" /></div>
             <div class="quote-info">
               <p class="quote-desc">
                 先生たちは親切です。 学校の設備は新しく現代的です。 国際的なクラスなので色々な国との文化交流ができます。
                 日本語ももっと上手になります。
               </p>
-              <span class="quote-author">Nguyen Van Minh</span>
+              <div class="quote-author">
+                <span>Hansi Perera</span><img src="./assets/img/flag/sirlanka.png" alt="" />
+              </div>
             </div>
           </div>
         </div>

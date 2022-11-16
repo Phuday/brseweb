@@ -1,119 +1,3 @@
-// .course-container {
-//   display: flex;
-//   gap: 20px;
-//   flex-wrap: nowrap;
-//   margin-top: 100px;
-//   @include mobile {
-//     display: flex;
-//     overflow-x: scroll;
-//     padding: 0 12px;
-//     scroll-snap-type: x mandatory;
-//     scroll-padding: 12px;
-//   }
-//   .course {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     position: relative;
-//     overflow-x: hidden;
-//     transition: 0.25s linear;
-//     border-radius: $border-radius;
-//     margin-top: 20px;
-//     @include mobile {
-//       flex: 0 0 90%;
-//       scroll-snap-align: center;
-//     }
-//     &::after {
-//       position: absolute;
-//       content: '';
-//       top: 0;
-//       left: 0;
-//       bottom: 0;
-//       background-color: $desc-bgc;
-//       width: 100%;
-//       display: block;
-//       height: 100%;
-//       transform: translateX(-100%);
-//       transition: 0.25s linear;
-//       background-image: $bg-img;
-//     }
-
-//     &-img {
-//       display: block;
-//       height: 600px;
-//       object-fit: cover;
-//       width: 100%;
-//       @include mobile {
-//         height: 500px;
-//       }
-//       img {
-//         width: 100%;
-//         height: 100%;
-//       }
-//     }
-//     &-content {
-//       position: absolute;
-//       z-index: 10;
-//       padding: 10px;
-//       transition: 0.25s linear;
-//       transform: translateX(-100%);
-//       width: 100%;
-//       height: 100%;
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       &-inner {
-//         &_title {
-//           margin-top: 50px;
-//           font-size: 25px;
-//           font-weight: bold;
-//           font-family: $ja-font;
-//           color: $second-color;
-//           margin-bottom: 20px;
-//         }
-//         &_desc {
-//           color: $white-color;
-//           font-size: 18px;
-//           line-height: 1.5;
-//           padding: 10px;
-//         }
-//       }
-//       &-icon {
-//         justify-content: center;
-//         display: flex;
-//         i {
-//           font-size: 40px;
-//           width: 70px;
-//           height: 70px;
-//           align-items: center;
-//           color: $second-color;
-//           display: flex;
-//           justify-content: center;
-//           margin-bottom: 50px;
-//           padding: 30px;
-//           border: 2px solid $second-color;
-//           border-radius: 50%;
-//         }
-//       }
-//     }
-//   }
-//   .course:hover {
-//     transform: translateY(-10px);
-//     transition: 0.25s linear;
-//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-//       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-//     @include mobile {
-//       box-shadow: none;
-//     }
-//     &::after {
-//       transform: translateX(0);
-//     }
-//     .course-content {
-//       transform: translateX(0);
-//     }
-//   }
-// }
-
 .course {
   display: none;
   display: flex;
@@ -135,10 +19,10 @@
       position: absolute;
       width: 250px;
       height: 250px;
-      transform: rotate(210deg);
-      right: 0;
-      bottom: 20%;
-      z-index: 100;
+      transform: rotate(218deg);
+      right: 15px;
+      bottom: 18%;
+      z-index: 200;
       @include tablet {
         width: 150px;
         height: 150px;
@@ -241,7 +125,7 @@
       display: flex;
       position: absolute;
       bottom: 10px;
-      right: -10%;
+      right: 1%;
       z-index: 100;
       @include mobile {
         right: 13%;

@@ -1,10 +1,11 @@
 .support {
   width: 100%;
-  min-height: 700px;
   @include tablet-mini {
     min-height: 400px;
   }
   .support-container {
+    min-height: 700px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 350px;
@@ -28,10 +29,12 @@
       }
       &:first-child {
         grid-area: h1;
-        height: 100%;
+        height: 700px;
       }
       &:last-child {
         grid-area: h4;
+        height: 700px;
+
         @include mobile {
           height: 300px;
         }

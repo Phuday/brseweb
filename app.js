@@ -1,16 +1,18 @@
+const loading = document.querySelector('.loader');
+
 // mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.header-mobile');
 menuToggle.addEventListener('click', function () {
   menu.classList.toggle('is-show');
-  menuToggle.classList.toggle('fa-bars');
-  menuToggle.classList.toggle('fa-times');
+  menuToggle.classList.toggle('fi-rr-list');
+  menuToggle.classList.toggle('fi-rr-cross-small');
 });
 document.addEventListener('click', function (event) {
   if (!menu.contains(event.target) && !event.target.matches('.menu-toggle')) {
     menu.classList.remove('is-show');
-    menuToggle.classList.remove('fa-times');
-    menuToggle.classList.add('fa-bars');
+    menuToggle.classList.remove('fi-rr-cross-small');
+    menuToggle.classList.add('fi-rr-list');
   }
 });
 // header sticky
@@ -19,8 +21,22 @@ window.addEventListener('scroll', function () {
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
+// progress
+const progress = document.querySelector('.progress');
+window.addEventListener('scroll', function () {
+  const scrollTop = window.pageYOffset;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const width = (scrollTop / height) * 100;
+  progress.style.width = `${width}%`;
+});
 // course hover
+
 $(document).ready(function () {
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('.loader-wrapper').fadeOut(1000);
+    }, 4000);
+  });
   $('.course-img').hover(
     function () {
       $('.item1').removeClass('active');
@@ -50,7 +66,7 @@ $(document).ready(function () {
   // slick slider
   $('.quote-container').slick({
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3500,
     arrows: false,
     prevArrow:
       "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' aria-hidden='true'></i></button>",

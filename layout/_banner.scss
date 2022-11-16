@@ -1,10 +1,13 @@
 .banner {
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
   background-color: $white-color;
+  @include tablet-mini {
+    height: 80vh;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -42,22 +45,23 @@
   bottom: 0;
   left: 0;
   text-align: left;
-  width: 100%;
   display: flex;
   flex-direction: column;
-
+  writing-mode: vertical-rl;
+  @include tablet-mini {
+    writing-mode: horizontal-tb;
+  }
   &-content {
     padding: 20px;
     h2 {
       font-family: $eng-font;
       color: $green-light;
-      font-size: 40px;
+      font-size: 20px;
       margin: 0;
       text-transform: uppercase;
       border-radius: $border-radius;
       font-weight: 700;
       letter-spacing: 10px;
-      max-width: 1200px;
       padding: 10px 20px;
       display: inline-block;
       background-color: $white-color;
