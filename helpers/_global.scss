@@ -26,6 +26,44 @@ body {
 div[id] {
   scroll-margin-top: 80px;
 }
+.scroll-top {
+  z-index: 999999;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  opacity: 0;
+  font-size: 35px;
+  pointer-events: none;
+  transition: 0.5s;
+  background: $second-color;
+  color: $green-dark;
+  width: 60px;
+  height: 60px;
+  bottom: 10%;
+  right: 32px;
+  border-radius: 5px;
+  @include mobile {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    right: 15px;
+    bottom: 5%;
+  }
+}
+.scroll-top.active {
+  bottom: 12%;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-55px);
+  @include mobile {
+    transform: translateY(-35px);
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}
 .loader-wrapper {
   position: fixed;
   top: 0;

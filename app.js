@@ -13,10 +13,16 @@ document.addEventListener('click', function (event) {
     menuToggle.classList.add('fa-bars-staggered');
   }
 });
-// header sticky
+//scroll top
+const scrollUp = document.querySelector('.scroll-top');
 window.addEventListener('scroll', function () {
   const header = document.querySelector('.header');
   header.classList.toggle('sticky', window.scrollY > 0);
+  if (window.pageYOffset > 100) {
+    scrollUp.classList.add('active');
+  } else {
+    scrollUp.classList.remove('active');
+  }
 });
 
 // progress
@@ -32,7 +38,7 @@ window.addEventListener('scroll', function () {
 
 const root = document.documentElement;
 const eventElementsDisplayed = getComputedStyle(root).getPropertyValue('$event-elements-displayed');
-const eventContent = document.querySelector('ul.event-content');
+const eventContent = document.querySelector('ul.event-list');
 
 root.style.setProperty('$event-elements', eventContent.children.length);
 
@@ -46,7 +52,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       $('.loader-wrapper').fadeOut(1000);
-    }, 0);
+    }, 5000);
   });
   $('.course-img').hover(
     function () {
@@ -124,7 +130,7 @@ $(document).ready(function () {
 // scroll animation
 ScrollReveal({ reset: true, distance: '60px', duration: 2000, delay: 200 });
 ScrollReveal().reveal(
-  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content',
+  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content, .quote',
   {
     delay: 500,
     origin: 'left',
@@ -141,7 +147,7 @@ ScrollReveal().reveal('.intro-img2, .opencampus,.support-item, .about-img, .acco
   interval: 200,
 });
 ScrollReveal().reveal(
-  '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .quote, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link ',
+  '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link ',
   {
     delay: 600,
     origin: 'bottom',

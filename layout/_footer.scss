@@ -1,6 +1,9 @@
 footer {
   display: block;
   margin-top: 200px;
+  @include tablet-mini {
+    margin-top: 100px;
+  }
   .footer-top {
     background-color: $green-bg;
     border-bottom: 2px solid $white-color;
@@ -20,21 +23,38 @@ footer {
         width: 200px;
       }
     }
-    &__location {
+
+    &__icon {
+      li a i {
+        font-size: 40px;
+      }
+    }
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+    .footer-top__location {
       font-size: 20px;
       line-height: 1.4;
       color: $gray;
+      margin: 10px 0;
+      a {
+        padding: 5px 5px;
+        text-decoration: none;
+        color: $white-color;
+        background-color: $green-light;
+        font-size: 16px;
+        border-radius: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
       @include tablet-mini {
         font-size: 18px;
         margin-bottom: 10px;
       }
       @include mobile {
         font-size: 16px;
-      }
-    }
-    &__icon {
-      li a i {
-        font-size: 40px;
       }
     }
   }
@@ -48,6 +68,7 @@ footer {
       @include mobile {
         padding-top: 0;
         padding-bottom: 0;
+        flex-direction: column;
       }
       li a {
         display: block;
@@ -95,6 +116,18 @@ footer {
         flex-direction: column;
         gap: 10px;
         padding: 10px;
+      }
+      a {
+        font-size: 20px;
+        color: $black-color;
+        text-decoration: none;
+        @include mobile {
+          font-size: 18px;
+        }
+        span {
+          font-weight: bold;
+          margin-right: 10px;
+        }
       }
       p {
         font-size: 20px;

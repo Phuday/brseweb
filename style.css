@@ -70,6 +70,50 @@ div[id] {
   scroll-margin-top: 80px;
 }
 
+.scroll-top {
+  z-index: 999999;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  opacity: 0;
+  font-size: 35px;
+  pointer-events: none;
+  transition: 0.5s;
+  background: #ffe100;
+  color: #07913a;
+  width: 60px;
+  height: 60px;
+  bottom: 10%;
+  right: 32px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    right: 15px;
+    bottom: 5%;
+  }
+}
+
+.scroll-top.active {
+  bottom: 12%;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(-55px);
+}
+@media only screen and (max-width: 767px) {
+  .scroll-top.active {
+    transform: translateY(-35px);
+  }
+}
+.scroll-top.active:hover {
+  opacity: 0.6;
+}
+
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -689,6 +733,11 @@ div[id] {
   border-right: 1px solid #626161;
   position: relative;
 }
+@media only screen and (max-width: 1023px) {
+  .header-nav-list__link {
+    margin: 20px 5px;
+  }
+}
 .header-nav-list__link a {
   color: #231815;
   text-decoration: none;
@@ -712,6 +761,11 @@ div[id] {
 }
 .header-nav-list__link a:hover::after {
   width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+  .header-nav-list__link a {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1005,7 +1059,6 @@ div[id] {
   transform: rotate(218deg);
   right: 15px;
   bottom: 18%;
-  z-index: 200;
 }
 @media only screen and (max-width: 1024px) {
   .course-left .arrow-img {
@@ -1705,17 +1758,23 @@ div[id] {
 .support {
   width: 100%;
 }
-@media only screen and (max-width: 1023px) {
-  .support {
-    min-height: 400px;
-  }
-}
 .support .support-container {
   min-height: 700px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 350px;
   grid-template-areas: "h1 h2 h4" "h1 h3 h4";
+}
+@media only screen and (max-width: 1024px) {
+  .support .support-container {
+    min-height: 550px;
+    grid-template-rows: 250px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .support .support-container {
+    min-height: 400px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .support .support-container {
@@ -1736,13 +1795,38 @@ div[id] {
 .support .support-container .support-item:nth-child(2), .support .support-container .support-item:nth-child(3) {
   height: 350px;
 }
+@media only screen and (max-width: 1024px) {
+  .support .support-container .support-item:nth-child(2), .support .support-container .support-item:nth-child(3) {
+    height: 100%;
+  }
+}
 .support .support-container .support-item:first-child {
   grid-area: h1;
   height: 700px;
 }
+@media only screen and (max-width: 1024px) {
+  .support .support-container .support-item:first-child {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .support .support-container .support-item:first-child {
+    height: 400px;
+  }
+}
 .support .support-container .support-item:last-child {
   grid-area: h4;
   height: 700px;
+}
+@media only screen and (max-width: 1024px) {
+  .support .support-container .support-item:last-child {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .support .support-container .support-item:last-child {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .support .support-container .support-item:last-child {
@@ -1835,6 +1919,11 @@ div[id] {
   left: 50%;
   transform: translateX(-50%);
 }
+@media only screen and (max-width: 1024px) {
+  .opencampus .campus-bg {
+    max-width: 600px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .opencampus .campus-bg {
     max-width: 100%;
@@ -1851,6 +1940,14 @@ div[id] {
   right: 10%;
   top: 65%;
   transform: rotate(30deg);
+}
+@media only screen and (max-width: 1024px) {
+  .opencampus .campus-logo {
+    width: 300px;
+    right: 3%;
+    top: 60%;
+    transform: rotate(20deg);
+  }
 }
 @media only screen and (max-width: 1023px) {
   .opencampus .campus-logo {
@@ -1959,6 +2056,7 @@ div[id] {
   transform: translateX(-50%);
   padding: 30px 160px;
   color: #fff;
+  text-decoration: none;
   font-size: 25px;
   transition: 0.25s ease;
   background-color: #000;
@@ -2120,7 +2218,7 @@ div[id] {
   background-color: #f3f3f3;
   margin-top: 100px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 @media only screen and (max-width: 767px) {
   .quote {
@@ -2143,6 +2241,7 @@ div[id] {
 }
 .quote-item {
   display: flex;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -2305,8 +2404,13 @@ div[id] {
   position: relative;
   margin-top: 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .event {
+    height: auto;
+  }
+}
 
-.event-content {
+.event-list {
   list-style: none;
   height: 100%;
   display: flex;
@@ -2333,7 +2437,7 @@ div[id] {
     transform: translateX(-240%);
   }
 }
-.event-content li {
+.event-list .event-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2345,14 +2449,20 @@ div[id] {
   font-size: 18.75vh; /* 5rem; */
   white-space: nowrap;
 }
+@media only screen and (max-width: 1024px) {
+  .event-list .event-item {
+    width: 40%;
+    height: 25vw;
+  }
+}
 @media only screen and (max-width: 767px) {
-  .event-content li {
+  .event-list .event-item {
     width: 50%;
     margin: 0 10px;
   }
 }
 
-.event-content li img {
+.event-list .event-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2368,7 +2478,7 @@ div[id] {
   position: relative;
 }
 
-.event2-content {
+.event2-list {
   list-style: none;
   height: 100%;
   display: flex;
@@ -2395,7 +2505,7 @@ div[id] {
     transform: translateX(0);
   }
 }
-.event2-content li {
+.event2-list .event-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2407,14 +2517,20 @@ div[id] {
   font-size: 18.75vh; /* 5rem; */
   white-space: nowrap;
 }
+@media only screen and (max-width: 1024px) {
+  .event2-list .event-item {
+    width: 40%;
+    height: 25vw;
+  }
+}
 @media only screen and (max-width: 767px) {
-  .event2-content li {
+  .event2-list .event-item {
     width: 50%;
     margin: 0 10px;
   }
 }
 
-.event2-content li img {
+.event2-list .event-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2425,6 +2541,11 @@ div[id] {
 footer {
   display: block;
   margin-top: 200px;
+}
+@media only screen and (max-width: 1023px) {
+  footer {
+    margin-top: 100px;
+  }
 }
 footer .footer-top {
   background-color: #e5f3ed;
@@ -2450,24 +2571,40 @@ footer .footer-top__logo {
     width: 200px;
   }
 }
-footer .footer-top__location {
+footer .footer-top__icon li a i {
+  font-size: 40px;
+}
+footer .location {
+  display: flex;
+  flex-direction: column;
+}
+footer .location .footer-top__location {
   font-size: 20px;
   line-height: 1.4;
   color: #635f85;
+  margin: 10px 0;
+}
+footer .location .footer-top__location a {
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00633d;
+  font-size: 16px;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 1023px) {
-  footer .footer-top__location {
+  footer .location .footer-top__location {
     font-size: 18px;
     margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
-  footer .footer-top__location {
+  footer .location .footer-top__location {
     font-size: 16px;
   }
-}
-footer .footer-top__icon li a i {
-  font-size: 40px;
 }
 footer .footer-main {
   background-color: #e5f3ed;
@@ -2482,6 +2619,7 @@ footer .footer-main__list {
   footer .footer-main__list {
     padding-top: 0;
     padding-bottom: 0;
+    flex-direction: column;
   }
 }
 footer .footer-main__list li a {
@@ -2539,6 +2677,20 @@ footer .footer-main__assess {
     gap: 10px;
     padding: 10px;
   }
+}
+footer .footer-main__assess a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  footer .footer-main__assess a {
+    font-size: 18px;
+  }
+}
+footer .footer-main__assess a span {
+  font-weight: bold;
+  margin-right: 10px;
 }
 footer .footer-main__assess p {
   font-size: 20px;

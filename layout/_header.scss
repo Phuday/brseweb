@@ -313,6 +313,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
+
               &:hover {
                 background-color: $gray-light-color;
                 color: $button-color;
@@ -368,7 +369,9 @@
         width: 125px;
         border-right: 1px solid $text-gray;
         position: relative;
-
+        @include tablet-mini {
+          margin: 20px 5px;
+        }
         a {
           color: $text-color;
           text-decoration: none;
@@ -391,6 +394,9 @@
           }
           &:hover::after {
             width: 100%;
+          }
+          @include tablet-mini {
+            padding: 0;
           }
         }
       }

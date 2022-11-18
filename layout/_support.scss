@@ -1,17 +1,21 @@
 .support {
   width: 100%;
-  @include tablet-mini {
-    min-height: 400px;
-  }
+
   .support-container {
     min-height: 700px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 350px;
     grid-template-areas:
       'h1 h2 h4'
       'h1 h3 h4';
+    @include tablet {
+      min-height: 550px;
+      grid-template-rows: 250px;
+    }
+    @include tablet-mini {
+      min-height: 400px;
+    }
     @include tablet-mini {
       grid-template-rows: 200px;
     }
@@ -26,14 +30,29 @@
       &:nth-child(2),
       &:nth-child(3) {
         height: 350px;
+        @include tablet {
+          height: 100%;
+        }
       }
       &:first-child {
         grid-area: h1;
         height: 700px;
+        @include tablet {
+          height: 550px;
+        }
+        @include tablet-mini {
+          height: 400px;
+        }
       }
       &:last-child {
         grid-area: h4;
         height: 700px;
+        @include tablet {
+          height: 550px;
+        }
+        @include tablet-mini {
+          height: 400px;
+        }
 
         @include mobile {
           height: 300px;
