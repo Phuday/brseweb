@@ -1636,6 +1636,7 @@ div[id] {
 .introduce-container .introduce-video {
   z-index: 10;
   margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 @media only screen and (max-width: 767px) {
   .introduce-container .introduce-video {

@@ -63,6 +63,7 @@
   .introduce-video {
     z-index: 10;
     margin-right: 30px;
+    box-shadow: $box-shadow;
     @include mobile {
       margin-right: 0;
       margin-bottom: 10px;
