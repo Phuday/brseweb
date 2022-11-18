@@ -536,6 +536,7 @@ div[id] {
 .header-info-item__lang-inner .language-pc-item {
   width: 100%;
   padding: 0 10px;
+  z-index: 100;
 }
 .header-info-item__lang-inner .language-pc-item-link {
   text-decoration: none;
