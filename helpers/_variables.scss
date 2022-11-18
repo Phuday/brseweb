@@ -34,4 +34,4 @@ $event-height: 25vh;
 $event-elements: 12; /* defined with JavaScript */
 $event-elements-displayed: 5;
 $event-element-width: calc($event-width / $event-elements-displayed);
-$event-animation-duration: calc($event-elements * 4s);
+$event-animation-duration: calc($event-elements * 6s);
