@@ -1,5 +1,3 @@
-const loading = document.querySelector('.loader');
-
 // mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.header-mobile');
@@ -29,6 +27,19 @@ window.addEventListener('scroll', function () {
   const width = (scrollTop / height) * 100;
   progress.style.width = `${width}%`;
 });
+
+//event slide
+
+const root = document.documentElement;
+const eventElementsDisplayed = getComputedStyle(root).getPropertyValue('$event-elements-displayed');
+const eventContent = document.querySelector('ul.event-content');
+
+root.style.setProperty('$event-elements', eventContent.children.length);
+
+for (let i = 0; i < eventElementsDisplayed; i++) {
+  eventContent.appendChild(eventContent.children[i].cloneNode(true));
+}
+
 // course hover
 
 $(document).ready(function () {
@@ -108,4 +119,50 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+// scroll animation
+ScrollReveal({ reset: true, distance: '60px', duration: 2000, delay: 200 });
+ScrollReveal().reveal(
+  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content',
+  {
+    delay: 500,
+    origin: 'left',
+  },
+);
+
+ScrollReveal().reveal('.course-left-info, .course-left-campus, .intro-img, .intro-img2, .price-desc-item', {
+  delay: 600,
+  origin: 'left',
+});
+ScrollReveal().reveal('.intro-img2, .opencampus,.support-item, .about-img, .accordion-body, .footer-top', {
+  delay: 500,
+  origin: 'bottom',
+  interval: 200,
+});
+ScrollReveal().reveal(
+  '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .quote, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link ',
+  {
+    delay: 600,
+    origin: 'bottom',
+  },
+);
+ScrollReveal().reveal('.arrow-img', {
+  delay: 600,
+  origin: 'top',
+});
+ScrollReveal().reveal('.arrow-img, .opencampus-img, .opencampus-text', {
+  delay: 600,
+  scale: 0.85,
+  rotate: {
+    x: 20,
+    z: 20,
+  },
+});
+ScrollReveal().reveal('.course-img, .footer-main__list li, .header-top-content-info, .header-info-item', {
+  mobile: false,
+  desktop: true,
+  delay: 500,
+  origin: 'bottom',
+  interval: 200,
 });

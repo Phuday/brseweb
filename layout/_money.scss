@@ -16,6 +16,9 @@
     flex-direction: column;
     &-item {
       display: flex;
+      i {
+        line-height: 1.6;
+      }
     }
     p {
       max-width: 1000px;
@@ -49,7 +52,7 @@
     margin: 0 20px;
     width: 400px;
     height: 300px;
-    opacity: 0.8;
+
     @include tablet-mini {
       height: 200px;
     }
