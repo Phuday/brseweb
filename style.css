@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap");
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css");
 *,
@@ -68,7 +67,7 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
   z-index: 99999999;
   display: flex;
   justify-content: center;
@@ -207,6 +206,11 @@ body::-webkit-scrollbar-thumb {
   .wrapper-bg {
     height: 500px;
   }
+}
+
+.container {
+  max-width: 1023px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -1971,19 +1975,97 @@ body::-webkit-scrollbar-thumb {
   transition: 0.25s ease;
 }
 
-.price {
-  margin-top: 100px;
+.price-title {
+  color: #00633d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.price-title h3 span {
+  font-size: 25px;
+}
+@media only screen and (max-width: 1023px) {
+  .price-title {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+}
+
+.price-img {
   width: 100%;
-  height: 600px;
-  background-image: url("../assets/img/nyugaku/学費.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.price-img img {
+  margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
-  .price {
-    height: 300px;
+  .price-img {
+    height: 100px;
   }
+}
+
+.bonus-container .bonus-item {
+  margin: 0 20px;
+  width: 400px;
+  height: 300px;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1023px) {
+  .bonus-container .bonus-item {
+    height: 200px;
+  }
+}
+.bonus-container .bonus-item img {
+  opacity: 0.6;
+  transition: all 300ms linear;
+  width: 400px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media only screen and (max-width: 1023px) {
+  .bonus-container .bonus-item img {
+    height: 200px;
+  }
+}
+.bonus-container .slick-center img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 10px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+}
+@media only screen and (max-width: 767px) {
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.slick-dots li.slick-active button {
+  opacity: 0.75;
+  background-color: #f03a2d;
 }
 
 .quote {
@@ -2006,9 +2088,10 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   right: 20%;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .quote-icon {
-    width: 100px;
+    width: 120px;
+    right: 3%;
   }
 }
 .quote-item {
@@ -2037,6 +2120,12 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+@media only screen and (max-width: 1023px) {
+  .quote-img {
+    width: 180px;
+    height: 180px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .quote-img {
     width: 150px;
@@ -2050,6 +2139,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 1023px) {
+  .quote-img img {
+    width: 180px;
+    height: 180px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .quote-img img {
@@ -2080,6 +2175,11 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   max-width: 100%;
   word-break: break-word;
+}
+@media only screen and (max-width: 1023px) {
+  .quote-desc {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .quote-desc {

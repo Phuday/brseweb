@@ -35,7 +35,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       $('.loader-wrapper').fadeOut(1000);
-    }, 4000);
+    }, 0);
   });
   $('.course-img').hover(
     function () {
@@ -72,5 +72,40 @@ $(document).ready(function () {
       "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' aria-hidden='true'></i></button>",
     nextArrow:
       "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>",
+  });
+
+  $('.bonus-container').slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    centerMode: true,
+    dots: true,
+
+    centerPadding: '60px',
+    slidesToShow: 3,
+    arrows: false,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });

@@ -1,44 +1,80 @@
-// #price {
-//   border: solid thin;
-//   border-collapse: collapse;
-//   max-width: 1140px;
-//   margin: 0 auto;
-//   margin-top: 100px;
-//   th,
-//   td {
-//     border: solid thin;
-//     padding: 5px 20px;
-//   }
-//   td {
-//     white-space: nowrap;
-//     border-style: none solid;
-//     vertical-align: top;
-//   }
-//   th {
-//     font-weight: normal;
-//     background-color: $black-color;
-//     color: $white-color;
-//     padding: 18px;
-//     vertical-align: middle;
-//     text-align: center;
-//   }
-//   tbody td:first-child::after {
-//     content: leader('. ');
-//   }
-//   tbody td:not(:last-child) {
-//     border-bottom: 1px solid $black-color;
-//   }
-// }
-
-.price {
-  margin-top: 100px;
-  width: 100%;
-  height: 600px;
-  background-image: url('../assets/img/nyugaku/学費.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  @include mobile {
-    height: 300px;
+.price-title {
+  color: $green-light;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  h3 {
+    span {
+      font-size: 25px;
+    }
   }
+  @include tablet-mini {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+}
+
+.price-img {
+  width: 100%;
+  margin-bottom: 50px;
+  img {
+    margin: 0 auto;
+  }
+  @include mobile {
+    height: 100px;
+  }
+}
+.bonus-container {
+  .bonus-item {
+    margin: 0 20px;
+    width: 400px;
+    height: 300px;
+    opacity: 0.8;
+    @include tablet-mini {
+      height: 200px;
+    }
+    img {
+      opacity: 0.6;
+      transition: all 300ms linear;
+      width: 400px;
+      height: 300px;
+      object-fit: contain;
+      @include tablet-mini {
+        height: 200px;
+      }
+    }
+  }
+  .slick-center img {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.slick-dots li {
+  margin: 10px;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  @include mobile {
+    width: 10px;
+    height: 10px;
+  }
+}
+.slick-dots li.slick-active button {
+  opacity: 0.75;
+  background-color: $button-color;
 }

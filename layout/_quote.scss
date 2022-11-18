@@ -15,8 +15,9 @@
     z-index: 1000;
     bottom: 0;
     right: 20%;
-    @include mobile {
-      width: 100px;
+    @include tablet-mini {
+      width: 120px;
+      right: 3%;
     }
   }
   &-item {
@@ -34,6 +35,10 @@
     flex-shrink: 0;
     margin-right: 50px;
     @include flexbox(center);
+    @include tablet-mini {
+      width: 180px;
+      height: 180px;
+    }
     @include mobile {
       width: 150px;
       height: 150px;
@@ -44,6 +49,10 @@
       height: 300px;
       border-radius: 50%;
       object-fit: cover;
+      @include tablet-mini {
+        width: 180px;
+        height: 180px;
+      }
       @include mobile {
         width: 150px;
         height: 150px;
@@ -66,6 +75,9 @@
     align-items: center;
     justify-content: center;
     @include textClamp(5);
+    @include tablet-mini {
+      font-size: 20px;
+    }
     @include mobile {
       font-size: 18px;
       padding: 10px;
