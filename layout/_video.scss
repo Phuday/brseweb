@@ -154,6 +154,9 @@
     @include tablet {
       height: 150px;
     }
+    &__item {
+      display: flex;
+    }
     &::-webkit-scrollbar {
       border-radius: 50px;
       width: 4px;

@@ -5,14 +5,14 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.header-mobile');
 menuToggle.addEventListener('click', function () {
   menu.classList.toggle('is-show');
-  menuToggle.classList.toggle('fi-rr-list');
-  menuToggle.classList.toggle('fi-rr-cross-small');
+  menuToggle.classList.toggle('fa-bars-staggered');
+  menuToggle.classList.toggle('fa-times');
 });
 document.addEventListener('click', function (event) {
   if (!menu.contains(event.target) && !event.target.matches('.menu-toggle')) {
     menu.classList.remove('is-show');
-    menuToggle.classList.remove('fi-rr-cross-small');
-    menuToggle.classList.add('fi-rr-list');
+    menuToggle.classList.remove('fa-times');
+    menuToggle.classList.add('fa-bars-staggered');
   }
 });
 // header sticky

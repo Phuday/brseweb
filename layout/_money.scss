@@ -1,16 +1,36 @@
 .price-title {
-  color: $green-light;
-  font-size: 30px;
-  font-weight: bold;
   margin-bottom: 50px;
   h3 {
-    span {
+    color: $green-light;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include tablet-mini {
+      margin-left: 10px;
       font-size: 25px;
     }
   }
-  @include tablet-mini {
-    margin-left: 10px;
-    font-size: 25px;
+  .price-desc {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    &-item {
+      display: flex;
+    }
+    p {
+      max-width: 1000px;
+      font-size: 20px;
+      margin-left: 20px;
+      line-height: 1.4;
+      @include tablet-mini {
+        font-size: 18px;
+        max-width: 700px;
+      }
+      @include mobile {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
   }
 }
 
