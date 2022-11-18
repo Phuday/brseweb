@@ -789,6 +789,7 @@ div[id] {
   display: flex;
   align-items: flex-end;
   background-color: #fff;
+  z-index: -1;
 }
 @media only screen and (max-width: 1023px) {
   .banner {
@@ -846,7 +847,7 @@ div[id] {
 }
 .banner-text {
   position: absolute;
-  bottom: 0;
+  bottom: 6%;
   left: 0;
   text-align: left;
   display: flex;
@@ -2418,9 +2419,6 @@ div[id] {
           animation: scrolling 48s linear infinite;
 }
 
-/* .event-content:hover {
-  animation-play-state: paused;
-} */
 @-webkit-keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -2429,6 +2427,7 @@ div[id] {
     transform: translateX(-240%);
   }
 }
+
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -2441,12 +2440,11 @@ div[id] {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   flex-shrink: 0;
   margin: 0 20px;
   width: 20%;
   max-height: 100%;
-  font-size: 18.75vh; /* 5rem; */
+  font-size: 18.75vh;
   white-space: nowrap;
 }
 @media only screen and (max-width: 1024px) {
