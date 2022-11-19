@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap");
-@import url("https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -40,16 +40,14 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-
-/* defined with JavaScript */
+} /* defined with JavaScript */
 /* defined with JavaScript */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   line-height: 1;
   font-size: 16px;
   color: #231815;
@@ -276,7 +274,7 @@ div[id] {
   text-align: center;
   margin-top: 150px;
   margin-bottom: 100px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 @media only screen and (max-width: 1024px) {
   .wrapper-top {
@@ -900,7 +898,7 @@ div[id] {
   color: #fff;
   margin: 0;
   font-size: 35px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   width: 200px;
   line-height: 1.7;
   text-align: center;
@@ -920,7 +918,7 @@ div[id] {
   justify-content: space-between;
   align-items: center;
   height: 500px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   .about {
