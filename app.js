@@ -46,13 +46,30 @@ for (let i = 0; i < eventElementsDisplayed; i++) {
   eventContent.appendChild(eventContent.children[i].cloneNode(true));
 }
 
+// campus modal
+
+const modalWrapper = document.querySelector('.modal');
+if (modalWrapper) {
+  setTimeout(function () {
+    modalWrapper.classList.add('is-show');
+  }, 10000);
+}
+document.body.addEventListener('click', function (event) {
+  if (event.target.matches('.modal-close')) {
+    const modal = event.target.parentNode.parentNode;
+    modal.parentNode.removeChild(modal);
+  } else if (event.target.matches('.modal')) {
+    event.target.parentNode.removeChild(event.target);
+  }
+});
+
 // course hover
 
 $(document).ready(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       $('.loader-wrapper').fadeOut(1000);
-    }, 0);
+    }, 5000);
   });
   $('.course-img').hover(
     function () {
@@ -144,11 +161,14 @@ ScrollReveal().reveal(
     origin: 'left',
   },
 );
-ScrollReveal().reveal('.intro-img2, .opencampus,.support-item, .about-img, .accordion-body, .footer-top', {
-  delay: 500,
-  origin: 'bottom',
-  interval: 200,
-});
+ScrollReveal().reveal(
+  '.intro-img2, .opencampus,.support-item, .about-img, .accordion-body, .footer-top,  .opencampus-img, .opencampus-text',
+  {
+    delay: 500,
+    origin: 'bottom',
+    interval: 200,
+  },
+);
 ScrollReveal().reveal(
   '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link ',
   {
@@ -160,7 +180,7 @@ ScrollReveal().reveal('.arrow-img', {
   delay: 600,
   origin: 'top',
 });
-ScrollReveal().reveal('.arrow-img, .opencampus-img, .opencampus-text', {
+ScrollReveal().reveal('.arrow-img', {
   delay: 600,
   scale: 0.85,
   rotate: {

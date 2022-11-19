@@ -2125,6 +2125,154 @@ div[id] {
   transition: 0.25s ease;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+}
+
+.modal.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  max-width: 600px;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #ffe100;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.25s linear;
+  color: #00633d !important;
+}
+.modal-close:hover {
+  opacity: 0.7;
+  transition: 0.25s linear;
+}
+
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  transition: 0.25s linear;
+  margin-top: 30px;
+  background-color: #f03a2d;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+}
+.modal-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: inherit;
+  -webkit-animation: fade 1s forwards infinite linear;
+          animation: fade 1s forwards infinite linear;
+}
+.modal-btn:hover {
+  opacity: 0.7;
+}
+.modal-btn:hover i {
+  transition: 0.25s linear;
+  transform: translateX(10px);
+}
+.modal-btn i {
+  margin-left: 10px;
+  transition: 0.25s linear;
+}
+@media only screen and (max-width: 767px) {
+  .modal-btn {
+    font-size: 16px;
+  }
+}
+
+@-webkit-keyframes fade {
+  to {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  to {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+.modal-text {
+  color: #00633d;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px;
+}
+.modal-text::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  width: 100px;
+  height: 3px;
+  background-color: #f03a2d;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .modal-text {
+    font-size: 16px;
+  }
+}
+
+.modal-human {
+  position: absolute;
+  bottom: -10px;
+  right: 0%;
+  width: 140px;
+}
+@media only screen and (max-width: 767px) {
+  .modal-human {
+    width: 100px;
+  }
+}
+
 .price-title {
   margin-bottom: 50px;
 }
