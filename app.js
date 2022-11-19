@@ -128,7 +128,7 @@ $(document).ready(function () {
 });
 
 // scroll animation
-ScrollReveal({ reset: true, distance: '30px', duration: 2000, delay: 200 });
+ScrollReveal({ reset: true, distance: '30px', duration: 1600, delay: 100 });
 ScrollReveal().reveal(
   '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content, .quote, .footer-human1',
   {
