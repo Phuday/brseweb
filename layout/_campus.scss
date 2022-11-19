@@ -187,7 +187,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 10px;
+  margin: 0 10px;
 }
 .modal-close {
   position: absolute;
@@ -275,11 +275,34 @@
     font-size: 16px;
   }
 }
+.modal-year {
+  position: absolute;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: $green-light;
+  font-weight: bold;
+  bottom: 14%;
+  right: 4%;
+  transform: rotate(22deg);
+  @include mobile {
+    font-size: 25px;
+  }
+}
+.modal-human-top {
+  width: 250px;
+  margin-left: 200px;
+  @include mobile {
+    width: 170px;
+    margin-left: 150px;
+  }
+}
 .modal-human {
   position: absolute;
   bottom: -10px;
-  right: 0%;
+  left: 0%;
   width: 140px;
+  transform: scaleX(-1);
+
   @include mobile {
     width: 100px;
   }

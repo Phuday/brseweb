@@ -2156,7 +2156,7 @@ div[id] {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .modal-close {
@@ -2259,11 +2259,39 @@ div[id] {
   }
 }
 
+.modal-year {
+  position: absolute;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #00633d;
+  font-weight: bold;
+  bottom: 14%;
+  right: 4%;
+  transform: rotate(22deg);
+}
+@media only screen and (max-width: 767px) {
+  .modal-year {
+    font-size: 25px;
+  }
+}
+
+.modal-human-top {
+  width: 250px;
+  margin-left: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .modal-human-top {
+    width: 170px;
+    margin-left: 150px;
+  }
+}
+
 .modal-human {
   position: absolute;
   bottom: -10px;
-  right: 0%;
+  left: 0%;
   width: 140px;
+  transform: scaleX(-1);
 }
 @media only screen and (max-width: 767px) {
   .modal-human {
@@ -2295,7 +2323,7 @@ div[id] {
   display: flex;
 }
 .price-title .price-desc-item i {
-  line-height: 1.6;
+  line-height: 2;
 }
 .price-title .price-desc p {
   max-width: 1000px;
@@ -2620,7 +2648,7 @@ div[id] {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin: 0 20px;
+  margin: 0 10px;
   width: 20%;
   max-height: 100%;
   font-size: 18.75vh;
@@ -2635,7 +2663,7 @@ div[id] {
 @media only screen and (max-width: 767px) {
   .event-list .event-item {
     width: 50%;
-    margin: 0 10px;
+    margin: 0 5px;
   }
 }
 
@@ -2693,7 +2721,7 @@ div[id] {
   align-items: center;
   /* text-align: center; */
   flex-shrink: 0;
-  margin: 0 20px;
+  margin: 0 10px;
   width: 20%;
   max-height: 100%;
   font-size: 18.75vh; /* 5rem; */
@@ -2708,7 +2736,7 @@ div[id] {
 @media only screen and (max-width: 767px) {
   .event2-list .event-item {
     width: 50%;
-    margin: 0 10px;
+    margin: 0 5px;
   }
 }
 
