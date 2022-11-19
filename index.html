@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- loader -->
     <div class="loader-wrapper">
       <div id="load">
         <div>G</div>
@@ -28,24 +29,27 @@
         <div class="highlight">L</div>
       </div>
     </div>
+    <!-- progress bar to website -->
     <div class="progress"></div>
+    <!-- sroll to top btn -->
     <a href="#" class="scroll-top">
       <i class="fa-solid fa-plane-up"></i>
     </a>
+    <!-- header top -->
     <div class="header-top">
       <div class="wrapper">
         <div class="header-top-content">
-          <div class="header-top-content-title">
+          <div class="header-top-content__title">
             学校法人　中央工学校OSAKA <span>ブリッジシステムエンジニア科</span>
           </div>
-          <ul class="header-top-content-info">
-            <li class="header-top-content-info__link">
+          <ul class="header-top-content__info">
+            <li class="header-top-content__info-link">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
             </li>
-            <li class="header-top-content-info__link">
+            <li class="header-top-content__info-link">
               <a href=""><i class="fa-brands fa-line"></i></a>
             </li>
-            <li class="header-top-content-info__link">
+            <li class="header-top-content__info-link">
               <a href=""><i class="fa-brands fa-instagram ig"></i></a>
             </li>
           </ul>
@@ -129,18 +133,18 @@
               </div>
             </li>
           </ul>
-          <ul class="mb header-top-content-info">
-            <li class="mb header-top-content-info__link">
+          <ul class="mb header-top-content__info">
+            <li class="mb header-top-content__info-link">
               <a href=""><i class="fa-brands fa-facebook"></i></a>
             </li>
-            <li class="mb header-top-content-info__link">
+            <li class="mb header-top-content__info-link">
               <a href=""><i class="fa-brands fa-line"></i></a>
             </li>
-            <li class="mb header-top-content-info__link">
+            <li class="mb header-top-content__info-link">
               <a href=""><i class="fa-brands fa-instagram ig"></i></a>
             </li>
           </ul>
-          <div class="mb header-top-content-title">
+          <div class="mb header-top-content__title">
             学校法人　中央工学校OSAKA <span>ブリッジシステムエンジニア科</span>
           </div>
         </div>
@@ -184,7 +188,7 @@
     </div>
     <div class="wrapper-bg">
       <div class="wrapper">
-        <div class="about-container">
+        <div class="about">
           <div class="about-content">
             <h2 class="about-content-title">
               <span><i class="fa-regular fa-chart-bar"></i>ブリッジシステムエンジニア科<br /></span>で目指す就職先！！
@@ -194,12 +198,12 @@
               卒業後は、建築業、製造業、IT関連企業での就職を目指します。母国と日本の架け橋（Bridge）となる人材を育てます。建築業全般やCADオペレーター、システムエンジニア、プログラマー、ITコミュニケーターへの就職を目指します。
             </p>
             <div class="about-content-info">
-              <div class="about-content-info_top">
+              <div class="about-content-info__top">
                 <span>2年割</span>
                 <span>/</span>
                 <span>昼間</span>
               </div>
-              <div class="about-content-info_bot">
+              <div class="about-content-info__bot">
                 <span class="about-times">授業時間</span>
                 <span>9:10 ~ 16:20</span>
               </div>
@@ -235,7 +239,7 @@
           </div>
         </div>
         <div class="course-right">
-          <div class="course-img-container">
+          <div class="course-right-img">
             <div class="course-img item1 active">
               <div class="overlay"></div>
               <img
@@ -318,7 +322,7 @@
     </div>
 
     <!--  gakko syoukai -->
-    <div class="intro" id="review">
+    <div class="introduce" id="review">
       <div class="wrapper">
         <div class="introduce-container">
           <div class="intro-img">
@@ -328,7 +332,7 @@
             <img src="./assets/img/png/Chủ đề.png" alt="" />
           </div>
           <div class="introduce-video">
-            <div class="body_video">
+            <div class="introduce-video-body">
               <iframe
                 width="700px"
                 height="570"
@@ -409,11 +413,11 @@
     </div>
     <!-- open campus -->
     <div class="opencampus">
-      <img class="campus-bg" src="./assets/img/opencampus/campus.gif" alt="" />
-      <div class="campus-human">
+      <img class="opencampus-bg" src="./assets/img/opencampus/campus.gif" alt="" />
+      <div class="opencampus-human">
         <img src="./assets/img/opencampus/human.png" alt="" />
       </div>
-      <div class="campus-logo">
+      <div class="opencampus-logo">
         <img src="./assets/img/logo/ttl_campus.png" alt="" />
       </div>
       <div class="wrapper">
@@ -495,8 +499,8 @@
         </h2>
         <p class="wrapper-desc">ブリッジシステムエンジニア科</p>
       </div>
-      <div class="price-title" data-scroll-container>
-        <h3 data-scroll-section>１．学費</h3>
+      <div class="price-title">
+        <h3>１．学費</h3>
         <div class="price-desc">
           <div class="price-desc-item">
             <i class="fa-regular fa-hand-point-right"></i>
@@ -700,6 +704,10 @@
     </div>
     <!-- footer layout -->
     <footer>
+      <div class="footer-img">
+        <img src="./assets/img/png/human5.png" class="footer-human1" alt="" />
+        <img src="./assets/img/png/human6.png" class="footer-human2" alt="" />
+      </div>
       <div class="footer-top">
         <div class="wrapper">
           <div class="footer-top__logo"><img src="./assets/img/logo/logo1.png" alt="" /></div>
@@ -719,14 +727,14 @@
             </p>
           </div>
           <div class="footer-top__icon">
-            <ul class="header-top-content-info">
-              <li class="header-top-content-info__link">
+            <ul class="header-top-content__info">
+              <li class="header-top-content__info-link">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
               </li>
-              <li class="header-top-content-info__link">
+              <li class="header-top-content__info-link">
                 <a href=""><i class="fa-brands fa-line"></i></a>
               </li>
-              <li class="header-top-content-info__link">
+              <li class="header-top-content__info-link">
                 <a href=""><i class="fa-brands fa-instagram ig"></i></a>
               </li>
             </ul>

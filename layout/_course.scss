@@ -206,7 +206,7 @@
     @include mobile {
       width: 100%;
     }
-    .course-img-container {
+    &-img {
       display: flex;
       justify-content: space-between;
       gap: 10px;

@@ -52,7 +52,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       $('.loader-wrapper').fadeOut(1000);
-    }, 5000);
+    }, 0);
   });
   $('.course-img').hover(
     function () {
@@ -130,17 +130,20 @@ $(document).ready(function () {
 // scroll animation
 ScrollReveal({ reset: true, distance: '30px', duration: 2000, delay: 200 });
 ScrollReveal().reveal(
-  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content, .quote',
+  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content, .quote, .footer-human1',
   {
     delay: 500,
     origin: 'left',
   },
 );
 
-ScrollReveal().reveal('.course-left-info, .course-left-campus, .intro-img, .intro-img2, .price-desc-item', {
-  delay: 600,
-  origin: 'left',
-});
+ScrollReveal().reveal(
+  '.course-left-info, .course-left-campus, .intro-img, .intro-img2, .price-desc-item, .footer-human2',
+  {
+    delay: 600,
+    origin: 'left',
+  },
+);
 ScrollReveal().reveal('.intro-img2, .opencampus,.support-item, .about-img, .accordion-body, .footer-top', {
   delay: 500,
   origin: 'bottom',

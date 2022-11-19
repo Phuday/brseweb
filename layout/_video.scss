@@ -1,8 +1,7 @@
-.intro {
-  // background-color: $body-gray-color;
+.introduce {
   position: relative;
 }
-.body_video {
+.introduce-video-body {
   iframe {
     @include tablet {
       width: 500px;

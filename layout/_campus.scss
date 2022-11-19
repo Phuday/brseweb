@@ -5,7 +5,7 @@
   border-bottom: 1px solid $body-gray-color;
   position: relative;
   display: flex;
-  .campus-bg {
+  &-bg {
     position: absolute;
     max-width: 900px;
     z-index: -10;
@@ -22,7 +22,7 @@
       z-index: -10;
     }
   }
-  .campus-logo {
+  &-logo {
     position: absolute;
     width: 400px;
     right: 10%;
@@ -45,7 +45,7 @@
       transform: rotate(20deg);
     }
   }
-  .campus-human {
+  &-human {
     position: absolute;
     bottom: 0;
     left: 10%;
@@ -75,7 +75,7 @@
   @include mobile {
     height: 450px;
   }
-  .opencampus-img {
+  &-img {
     display: block;
     padding-top: 50px;
     width: 100%;
@@ -96,7 +96,7 @@
       }
     }
   }
-  .opencampus-text {
+  &-text {
     font-size: 40px;
     color: $green-light;
     font-weight: bold;
@@ -115,7 +115,7 @@
       padding: 10px;
     }
   }
-  .opencampus-btn {
+  &-btn {
     position: absolute;
     bottom: 10%;
     left: 50%;
