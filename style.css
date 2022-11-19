@@ -1509,7 +1509,7 @@ div[id] {
   transform: translateX(-100%);
 }
 .course-right-img .course-img-desc p {
-  max-height: 300px;
+  max-height: 450px;
   padding: 10px;
   overflow-x: hidden;
 }
@@ -1526,6 +1526,16 @@ div[id] {
 .course-right-img .course-img-desc p::-webkit-scrollbar-thumb {
   background-color: #07913a;
   border-radius: 50px;
+}
+@media only screen and (max-width: 1023px) {
+  .course-right-img .course-img-desc p {
+    max-height: 350px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .course-right-img .course-img-desc p {
+    max-height: 300px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .course-right-img .course-img-desc {

@@ -385,7 +385,7 @@
           transition: 0.25s linear;
           transform: translateX(-100%);
           p {
-            max-height: 300px;
+            max-height: 450px;
             padding: 10px;
             overflow-x: hidden;
             &::-webkit-scrollbar {
@@ -403,6 +403,12 @@
             &::-webkit-scrollbar-thumb {
               background-color: $green-dark;
               border-radius: 50px;
+            }
+            @include tablet-mini {
+              max-height: 350px;
+            }
+            @include mobile {
+              max-height: 300px;
             }
           }
           @include tablet {
