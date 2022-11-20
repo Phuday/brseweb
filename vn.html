@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>留学生ページ｜CCTO（中央工学校OSAKA）</title>
     <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,7 +16,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- slickのCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -199,7 +218,7 @@
             </p>
             <div class="about-content-info">
               <div class="about-content-info__top">
-                <span>2年割</span>
+                <span>2年制</span>
                 <span>/</span>
                 <span>昼間</span>
               </div>
@@ -509,7 +528,7 @@
           <div class="price-desc-item">
             <i class="fa-regular fa-hand-point-right"></i>
             <p>
-              - 学校の学費は大阪の一般的な専門学校と比較して平均です<br />
+              - 学校の学費は大阪の一般的な専門学校と比較して平均です。<br />
               ※特徴：研修費は学費に入ります。
             </p>
           </div>
@@ -689,12 +708,12 @@
         <li class="event-item"><img src="./assets/img/sport/sport7.jpg" alt="" /></li>
         <li class="event-item"><img src="./assets/img/sport/sport8.jpg" alt="" /></li>
         <li class="event-item"><img src="./assets/img/sport/sport9.jpg" alt="" /></li>
-        <li class="event-item"><img src="./assets/img/sport/sport10.jpg" alt="" /></li>
-        <li class="event-item"><img src="./assets/img/sport/sport11.jpg" alt="" /></li>
-        <li class="event-item"><img src="./assets/img/sport/sport4.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event8.jpeg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event9.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event10.jpg" alt="" /></li>
         <li class="event-item"><img src="./assets/img/kaigai/kaigai1.jpg" alt="" /></li>
         <li class="event-item"><img src="./assets/img/kaigai/kaigai2.jpg" alt="" /></li>
-        <li class="event-item"><img src="./assets/img/kaigai/kaigai3.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event11.jpg" alt="" /></li>
         <li class="event-item"><img src="./assets/img/kaigai/kaigai4.jpg" alt="" /></li>
 
         <li class="event-item"><img src="./assets/img/event/event1.jpg" alt="" /></li>
@@ -767,8 +786,12 @@
 
     <!-- modal -->
     <div class="modal">
+      <div class="modal-human-top">
+        <img src="./assets/img/png/mhuman1.png" alt="" />
+      </div>
       <div class="modal-content">
         <h2 class="modal-text">今すぐ参加しましょう！！！</h2>
+        <h2 class="modal-year">2022年</h2>
         <img src="./assets/img/png/human4.png" class="modal-human" alt="" />
         <i class="fa fa-times modal-close"></i>
         <img src="./assets/img/logo/ttl_campus.png" alt="" />
@@ -780,14 +803,21 @@
         ></a>
       </div>
     </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- jQuery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./app.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
