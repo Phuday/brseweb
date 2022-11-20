@@ -52,7 +52,7 @@ const modalWrapper = document.querySelector('.modal');
 if (modalWrapper) {
   setTimeout(function () {
     modalWrapper.classList.add('is-show');
-  }, 10000);
+  }, 15000);
 }
 document.body.addEventListener('click', function (event) {
   if (event.target.matches('.modal-close')) {
