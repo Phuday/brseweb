@@ -112,7 +112,6 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3500,
     centerMode: true,
-    dots: true,
 
     centerPadding: '60px',
     slidesToShow: 3,
@@ -176,6 +175,11 @@ ScrollReveal().reveal(
     origin: 'bottom',
   },
 );
+ScrollReveal().reveal('.header-nav-list__link ', {
+  delay: 600,
+  origin: 'left',
+  interval: 200,
+});
 ScrollReveal().reveal('.arrow-img', {
   delay: 600,
   origin: 'top',
@@ -188,7 +192,7 @@ ScrollReveal().reveal('.arrow-img', {
     z: 20,
   },
 });
-ScrollReveal().reveal('.course-img, .footer-main__list li, .header-top-content-info, .header-info-item', {
+ScrollReveal().reveal('.course-img, .footer-main__list li, .header-top-content__info', {
   mobile: false,
   desktop: true,
   delay: 500,
