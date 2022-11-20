@@ -144,24 +144,21 @@ $(document).ready(function () {
 });
 
 // scroll animation
-ScrollReveal({ reset: true, distance: '30px', duration: 1600, delay: 100 });
+ScrollReveal({ reset: true, distance: '60px', duration: 1600, delay: 100 });
 ScrollReveal().reveal(
-  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .opencampus-btn, .price-title h3, .banner-text-content, .quote, .footer-human1',
+  '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .price-title h3, .banner-text-content, .quote, .footer-human1',
   {
     delay: 500,
     origin: 'left',
   },
 );
 
+ScrollReveal().reveal('.course-left-info, .course-left-campus, .intro-img, .intro-img2,  .footer-human2', {
+  delay: 600,
+  origin: 'left',
+});
 ScrollReveal().reveal(
-  '.course-left-info, .course-left-campus, .intro-img, .intro-img2, .price-desc-item, .footer-human2',
-  {
-    delay: 600,
-    origin: 'left',
-  },
-);
-ScrollReveal().reveal(
-  '.intro-img2, .opencampus,.support-item, .about-img, .accordion-body, .footer-top,  .opencampus-img, .opencampus-text',
+  '.intro-img2, .opencampus, .support-item, .about-img, .accordion-body, .footer-top,  .opencampus-img, .opencampus-text',
   {
     delay: 500,
     origin: 'bottom',
@@ -169,13 +166,13 @@ ScrollReveal().reveal(
   },
 );
 ScrollReveal().reveal(
-  '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link ',
+  '.intro-img, .course-left-info, .course-left-campus, .price-img, .bonus-container, .footer-main__list, .footer-main__map, .footer-main__assess, .header-nav-list__link,  .opencampus-btn ',
   {
     delay: 600,
     origin: 'bottom',
   },
 );
-ScrollReveal().reveal('.header-nav-list__link ', {
+ScrollReveal().reveal('.header-nav-list__link, .price-desc-item ', {
   delay: 600,
   origin: 'left',
   interval: 200,
