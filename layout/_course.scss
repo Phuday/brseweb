@@ -45,6 +45,7 @@
       }
       @include tablet-mini {
         font-size: 35px;
+        margin-top: 20px;
       }
       @include mobile {
         display: flex;

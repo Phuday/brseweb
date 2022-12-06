@@ -26,7 +26,7 @@
       &-link {
         transition: 0.5s all;
         padding: 0 10px;
-        &:nth-child(3) a i {
+        &:nth-child(2) a i {
           background: #d6249f;
           background: radial-gradient(
             circle at 30% 107%,
@@ -47,7 +47,7 @@
         }
         &:hover {
           transition: 0.5s all;
-          transform: scale(1.4);
+          transform: scale(1.2);
         }
       }
       &-link a i {
@@ -62,11 +62,11 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 20px 10px;
   position: relative;
   transition: 0.25s linear;
   @include tablet {
-    padding: 20px 5px;
+    padding: 20px;
   }
   @include mobile {
     padding: 20px 10px;
@@ -142,10 +142,10 @@
           position: absolute;
           list-style: none;
           background-color: $green-light;
-          width: 150px;
-          right: 0;
+          min-width: 150px;
+          right: 10px;
           z-index: 10;
-          height: 150px;
+          min-height: 150px;
           display: flex;
           top: 32%;
           flex-direction: column;
@@ -343,10 +343,14 @@
       flex-direction: column;
       align-items: center;
       color: $white-color;
+      padding: 0 5px;
+      text-align: center;
       span {
         color: $white-color;
         font-size: 20px;
         margin-top: 10px;
+        display: flex;
+        text-align: center;
       }
     }
   }
@@ -364,12 +368,18 @@
       display: flex;
       justify-content: center;
       list-style: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       &__link {
         margin: 20px 20px;
         padding: 10px;
         border-left: 1px solid $text-gray;
-        width: 125px;
+        width: 150px;
         border-right: 1px solid $text-gray;
+        height: 50px;
+        display: flex;
+        justify-content: center;
         position: relative;
         @include tablet-mini {
           margin: 20px 5px;

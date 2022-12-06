@@ -40,11 +40,19 @@
 .price-img {
   width: 100%;
   margin-bottom: 50px;
+  .mb-price {
+    display: none;
+  }
   img {
     margin: 0 auto;
   }
-  @include mobile {
-    height: 100px;
+  @include tablet-mini {
+    .pc-price {
+      display: none;
+    }
+    .mb-price {
+      display: block;
+    }
   }
 }
 .bonus-container {

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ජාත්‍යන්තර ශිෂ්‍ය පිටුව | CCTO (Chuo College of Technology OSAKA)</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- slickのCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader-wrapper">
+      <div id="load">
+        <div>G</div>
+        <div>N</div>
+        <div>I</div>
+        <div class="highlight">D</div>
+        <div>A</div>
+        <div>O</div>
+        <div class="highlight">L</div>
+      </div>
+    </div>
+    <!-- progress bar to website -->
+    <div class="progress"></div>
+    <!-- sroll to top btn -->
+    <a href="#" class="scroll-top">
+      <i class="fa-solid fa-plane-up"></i>
+    </a>
+    <!-- header top -->
+    <div class="header-top">
+      <div class="wrapper">
+        <div class="header-top-content">
+          <div class="header-top-content__title">
+            පාසල් අධිකරණ පුද්ගලයා Chuo College of Technology OSAKA<span>පාලම් පද්ධති ඉංජිනේරු දෙපාර්තමේන්තුව</span>
+          </div>
+          <ul class="header-top-content__info">
+            <li class="header-top-content__info-link">
+              <a href="https://www.facebook.com/StudyinJapanCCTO"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+
+            <li class="header-top-content__info-link">
+              <a href="https://www.instagram.com/ccto_kokusai/"><i class="fa-brands fa-instagram ig"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header-logo">
+          <a href="#"><img src="./assets/img/logo/logo1.png" alt="" /></a>
+        </div>
+        <ul class="header-info">
+          <li class="header-info-item">
+            <a
+              class="header-info-item__link"
+              href="https://www.google.co.jp/maps/place/%E4%B8%AD%E5%A4%AE%E5%B7%A5%E5%AD%A6%E6%A0%A1OSAKA2%E5%8F%B7%E9%A4%A8/@34.7749024,135.4920239,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e5d50ee24cd9:0x8b584ccfdc353046!8m2!3d34.7749024!4d135.4920239?hl=ja"
+              target="_blank"
+              ><i class="header-info-item__link-icon fa-solid fa-location-dot"></i>ප්‍රවේශය</a
+            >
+          </li>
+          <li class="header-info-item">
+            <a class="header-info-item__link" href="tel:06-6866-0808"
+              ><i class="header-info-item__link-icon fa-solid fa-phone-volume"></i>06-6866-0808</a
+            >
+          </li>
+          <li class="header-info-item">
+            <div class="header-info-item__lang-inner">
+              <div class="header-info-item__lang-inner-icon">
+                <i class="language-icon-pc fa-solid fa-earth-asia"></i>
+                <i class="language-icon-pc-caret fa-solid fa-caret-down"></i>
+              </div>
+              <span>භාෂාව</span>
+              <ul class="language-pc">
+                <li class="language-pc-item">
+                  <a class="language-pc-item-link" href="english.html">English</a>
+                </li>
+                <li class="language-pc-item"><a class="language-pc-item-link" href="vn.html">Tiếng Việt </a></li>
+                <li class="language-pc-item"><a class="language-pc-item-link" href="nepal.html">नेपाली </a></li>
+                <li class="language-pc-item"><a class="language-pc-item-link" href="index.html">日本語 </a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <!-- header mobile menu layout -->
+        <div class="hamburger">
+          <i class="menu-toggle fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="header-mobile">
+          <ul class="header-mobile-list">
+            <li class="header-mobile-list__item"><a href="#about">දෙපාර්තමේන්තුව හැඳින්වීම</a></li>
+            <li class="header-mobile-list__item"><a href="#course">ඉගෙනීමේ විශේෂාංග</a></li>
+            <li class="header-mobile-list__item"><a href="#review">පාසල් හැඳින්වීම</a></li>
+            <li class="header-mobile-list__item"><a href="#support">සහාය</a></li>
+            <li class="header-mobile-list__item"><a href="#price">ටියුෂන්</a></li>
+            <li class="header-mobile-list__item"><a href="#event">සිදුවීම</a></li>
+          </ul>
+          <ul class="header-mobile-contact">
+            <li class="header-mobile-contact__item">
+              <a
+                class="header-mobile-contact__item-link"
+                href="https://www.google.co.jp/maps/place/%E4%B8%AD%E5%A4%AE%E5%B7%A5%E5%AD%A6%E6%A0%A1OSAKA2%E5%8F%B7%E9%A4%A8/@34.7749024,135.4920239,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e5d50ee24cd9:0x8b584ccfdc353046!8m2!3d34.7749024!4d135.4920239?hl=ja"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i>ප්‍රවේශය</a
+              >
+            </li>
+            <li class="header-mobile-contact__item">
+              <a class="header-mobile-contact__item-link" href="tel:06-6866-0808"
+                ><i class="fa-solid fa-phone-volume"></i>06-6866-0808</a
+              >
+            </li>
+            <li class="header-mobile-contact__item">
+              <div class="header-mobile-contact__item-inner">
+                <i class="language-icon fa-solid fa-earth-asia"></i>
+                <span>Language</span>
+                <i class="language-icon-caret fa-solid fa-caret-down"></i>
+                <ul class="language">
+                  <li class="language-item"><a class="language-item-link" href="english.html">English </a></li>
+                  <li class="language-item"><a class="language-item-link" href="vn.html">Tiếng Việt </a></li>
+                  <li class="language-item"><a class="language-item-link" href="nepal.html"> नेपाली</a></li>
+                  <li class="language-item"><a class="language-item-link" href="index.html">日本語 </a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <ul class="mb header-top-content__info">
+            <li class="mb header-top-content__info-link">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+
+            <li class="mb header-top-content__info-link">
+              <a href=""><i class="fa-brands fa-instagram ig"></i></a>
+            </li>
+          </ul>
+          <div class="mb header-top-content__title">
+            පාසල් අධිකරණ පුද්ගලයා Chuo College of Technology OSAKA <span>පාලම් පද්ධති ඉංජිනේරු දෙපාර්තමේන්තුව</span>
+          </div>
+        </div>
+
+        <!-- header nav pc or tab let -->
+        <div class="header-nav">
+          <ul class="header-nav-list show-on-scroll left-to-right start">
+            <li class="header-nav-list__link"><a href="#about">දෙපාර්තමේන්තුව හැඳින්වීම</a></li>
+            <li class="header-nav-list__link"><a href="#course">ඉගෙනීමේ විශේෂාංග</a></li>
+            <li class="header-nav-list__link"><a href="#review">පාසල් හැඳින්වීම</a></li>
+            <li class="header-nav-list__link"><a href="#support">සහාය</a></li>
+            <li class="header-nav-list__link"><a href="#price">ටියුෂන්</a></li>
+            <li class="header-nav-list__link"><a href="#event">සිදුවීම</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--  banner layout-->
+    <div class="banner">
+      <img src="./assets/img/mawari/ma.png" alt="" />
+      <img src="./assets/img/class/class3.jpg" alt="" />
+      <img src="./assets/img/class/class1.jpg" alt="" />
+      <img src="./assets/img/mawari/ma3.jpg" alt="" />
+      <img src="./assets/img/kaigai/kaigai1.jpg" alt="" />
+      <div class="banner-text">
+        <div class="banner-text-content">
+          <h2><span>C</span>HUO <span>C</span>OLLEGE OF <span>T</span>ECHNOLOGY <span>O</span>SAKA</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- about  -->
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start" id="about">
+        <h2 class="wrapper-title">
+          <i class="fa-solid fa-caret-left"></i>දෙපාර්තමේන්තුව හැඳින්වීම<i class="fa-solid fa-caret-right"></i>
+        </h2>
+        <p class="wrapper-desc">පාලම් පද්ධති ඉංජිනේරු දෙපාර්තමේන්තු ගැන</p>
+      </div>
+    </div>
+    <div class="wrapper-bg">
+      <div class="wrapper">
+        <div class="about">
+          <div class="about-content show-on-scroll left-to-right start">
+            <h2 class="about-content-title">
+              <span><i class="fa-regular fa-chart-bar"></i>පාලම් පද්ධති ඉංජිනේරු දෙපාර්තමේන්තුව<br /></span>
+            </h2>
+            <p class="about-content-desc">
+              ගෘහ නිර්මාණ ශිල්පය, CAD සහ වැඩසටහන්කරණය ගැන ඉගෙන ගන්න. උපාධිය ලැබීමෙන් පසු, ඉදිකිරීම් කර්මාන්තයේ, නිෂ්පාදන
+              කර්මාන්තයේ සහ තොරතුරු තාක්ෂණ ආශ්‍රිත සමාගම්වල රැකියා සොයා ගැනීම මගේ අරමුණයි. තම මව් රට සහ ජපානය අතර පාලමක්
+            </p>
+            <div class="about-content-info">
+              <div class="about-content-info__top">
+                <span>අවුරුදු 2 ක්</span>
+                <span>/</span>
+                <span>දිවාකාලය</span>
+              </div>
+              <div class="about-content-info__bot">
+                <span class="about-times">පන්ති කාලය</span>
+                <span>9:10 ~ 16:20</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-img show-on-scroll left-to-right start">
+            <img src="./assets/img/logo/about.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- course -->
+    <div class="wrapper">
+      <div class="course show-on-scroll left-to-right start" id="course">
+        <div class="course-left">
+          <img class="arrow-img" src="./assets/img/Black/Figures/3 arrows.png" alt="" />
+
+          <h2 class="course-left-title">
+            <i class="fa-solid fa-caret-left"></i><span>ඉගෙන ගන්නවා</span>හි විශේෂාංග<i
+              class="fa-solid fa-caret-right"
+            ></i>
+          </h2>
+          <!-- <h2 class="course-left-title">
+            <i class="fa-solid fa-caret-left"></i><span>ඉගෙනගන්නවා</span>හි විශේෂාංග<i class="fa-solid fa-caret-right"></i>
+          </h2> -->
+
+          <div class="course-left-campus">
+            <div class="campus-text">
+              <img src="./assets/img/logo/ttl_campus.png" alt="" />
+            </div>
+            <a
+              href="https://www.school-go.info/e0u70m/chuokoosakaform/form.php?fno=93&fsno=1"
+              target="_blank"
+              class="campus-link"
+              ><span>GO</span></a
+            >
+          </div>
+        </div>
+        <div class="course-right">
+          <div class="course-right-img">
+            <div class="course-img item1 active">
+              <div class="overlay"></div>
+              <img
+                class="course-img-item"
+                src="https://media.istockphoto.com/photos/blueprints-background-picture-id159737136?s=612x612"
+                alt=""
+              />
+              <div class="course-img-title course1">
+                <div class="course-img-box"></div>
+                <h3><span>1.</span>නිර්මාණ ශිල්පය</h3>
+              </div>
+              <div class="course-img-desc">
+                <p>
+                  පළමු වසර තුළ සිසුන් ගෘහ නිර්මාණ ශිල්පය පිළිබඳ මූලික දැනුම සහ පාරිභාෂිතය ඉගෙන ගන්නා අතර CAD පන්තිවල
+                  වාස්තු විද්‍යාත්මක සැලසුම් පිළිබඳව ඉගෙන ගත හැකිය. ඉදිකිරීම් සහ නිෂ්පාදන ස්ථාන සඳහා අවශ්‍ය කෙටුම්පත්
+                  කිරීම පිළිබඳ දැනුම ඔබට අනිවාර්යයෙන්ම ලබා ගත හැකිය. දෙවන වසරේ දී CAD භාවිතයෙන් යාන්ත්‍රික නිර්මාණය ගැන
+                  ඉගෙන ගෙන Revit භාවිතයෙන් තට්ටු 4ක නිවාස සංකීර්ණ, ලී ගෙවල් ආදියේ ත්‍රිමාණ චිත්‍ර අඳින්නෙමු.
+                </p>
+              </div>
+            </div>
+            <div class="course-img">
+              <div class="overlay"></div>
+              <img
+                class="course-img-item"
+                src="https://images.unsplash.com/photo-1543109740-4bdb38fda756?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt=""
+              />
+              <div class="course-img-title">
+                <div class="course-img-box"></div>
+                <h3><span>2.</span>ඉංග්‍රීසි ー TOEIC</h3>
+              </div>
+              <div class="course-img-desc">
+                <p>
+                  ඉංග්‍රීසි සංවාද පන්තියේදී, ඇමරිකානු ගුරුවරයා සහ මුළු පන්තියම සන්නිවේදන කුසලතා වැඩි දියුණු කිරීම සඳහා
+                  100% ඉංග්‍රීසි භාවිතා කරයි. TOEIC පන්තියේදී, ඔබ TOEIC විභාගය සඳහා ඉගෙන ගනු ඇත.
+                </p>
+              </div>
+            </div>
+            <div class="course-img">
+              <div class="overlay"></div>
+              <img
+                class="course-img-item"
+                src="https://plus.unsplash.com/premium_photo-1661274189502-7894676b76dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAwfHxidXNpbmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                alt=""
+              />
+              <div class="course-img-title">
+                <div class="course-img-box"></div>
+                <h3><span>3.</span>පාරික ආචාර විධි</h3>
+              </div>
+              <div class="course-img-desc">
+                <p>
+                  සමාජයේ සාමාජිකයෙකු වීමට අවශ්‍ය ව්‍යාපාරික ජපන් සහ ව්‍යාපාරික පුරුදු ලබා ගන්න. උදාහරණයක් ලෙස, ඔබ සමාගම්
+                  සම්මුඛ පරීක්ෂණ පුහුණුව, ව්‍යාපාරික කාඩ්පත් හුවමාරු හැසිරීම්, ඉහළ සහ පහළ ආසන සඳහා ආසන නීති, භාෂා සහ
+                  තනතුරු රීති, ඇඳුම් පැළඳුම් සහ වේශ නිරූපණය, නැමීම, මුද්දර දැමීම, ව්‍යාපාරික ඊමේල් ලිවීම, සෘතුමය සුබ
+                  පැතුම් වැනි බොහෝ ව්‍යාපාරික කුසලතා අත්කර ගනු ඇත.
+                </p>
+              </div>
+            </div>
+            <div class="course-img">
+              <div class="overlay"></div>
+              <img
+                class="course-img-item"
+                src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt=""
+              />
+              <div class="course-img-title">
+                <div class="course-img-box"></div>
+                <h3><span>4.</span> ලොග් ලැමිං/ප්‍රෝග්‍රමින්</h3>
+              </div>
+              <div class="course-img-desc">
+                <p>
+                  පද්ධති ඉංජිනේරුවන් සහ ක්‍රමලේඛකයින් සඳහා අවශ්‍ය දැනුම සහ කුසලතා ඔබට ඉගෙන ගත හැකිය. පළමු වසර තුළදී, ඔබ
+                  සීරීම් සහිත සරල ක්‍රීඩා ක්‍රමලේඛනයට හුරුවනු ඇති අතර, දෙවන වසරේ, ඔබ HTML හෝ JavaScript වලින් වෙබ් අඩවි
+                  නිර්මාණය කරනු ඇත.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start">
+        <h2 class="wrapper-title">
+          <i class="fa-solid fa-caret-left"></i>පාසල් හැඳින්වීම<i class="fa-solid fa-caret-right"></i>
+        </h2>
+        <p class="wrapper-desc">
+          ඔබට පාසල් ජීවිතය භුක්ති විඳීමට සහ සුවපහසු ලෙස ඉගෙනීමට හැකි ඉහළම මට්ටමේ ඉගෙනුම් පරිසරයක් අප සතුව ඇත
+        </p>
+      </div>
+    </div>
+
+    <!--  gakko syoukai -->
+    <div class="introduce" id="review">
+      <div class="wrapper">
+        <div class="introduce-container show-on-scroll left-to-right start">
+          <div class="intro-img">
+            <img src="./assets/img/png/human.png" alt="" />
+          </div>
+          <div class="intro-img2">
+            <img src="./assets/img/png/human1.png" alt="" />
+          </div>
+          <div class="introduce-video">
+            <div class="introduce-video-body">
+              <video id="video" controls>
+                <source src="movie.mp4" type="video/mp4" />
+                <source src="./assets/video/eng.MOV" type="video/ogg" />
+              </video>
+            </div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-item">
+              <div class="accordion-title active">
+                <h2><i class="fa-solid fa-laptop"></i>PC</h2>
+                <div class="accordion-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="accordion-desc active">
+                <div class="accordion-desc-text">
+                  <div class="accordion-desc-text__item">
+                    <!-- <i class="fa-solid fa-check-double"></i> -->
+                    <i class="fa-regular fa-hand-point-right"></i>
+
+                    <p>
+                      සෑම සිසුවෙකුටම පරිගණකයක් ලබා දී ඇත. <br />
+                      අපි සිසුන්ට පාසලේ සිටියදී නිදහසේ පරිගණක භාවිතා කිරීමට අවස්ථාව ලබා දෙන අතර, රැකියා සෙවීමට සහ
+                      අධ්‍යයනය සඳහා ඒවා භාවිතා කළ හැකිය. <br />
+                      මම වසර පුරා එකම පරිගණකය භාවිතා කරමි, එබැවින් මගේ දත්ත තවමත් පවතී, එය මගේ පුද්ගලික පරිගණකය ලෙස
+                      හැඟේ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <h2><i class="fa-solid fa-utensils"></i>පාසල් ආපනශාලාව</h2>
+                <div class="accordion-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="accordion-desc">
+                <div class="accordion-desc-text">
+                  <div class="accordion-desc-text__item">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    <p>
+                      කාර්යබහුල දවසක මම බෙන්ටෝ එකක් හැදුවේ නැත්නම් කමක් නැද්ද? <br />
+                      දහවල් වන විට, පාසල් ආපනශාලාවේ බෙන්ටෝ විකුණන බැවින්, ඔබට පහසුව සඳහා සාප්පුවකට, සුපිරි වෙළඳසැලකට හෝ
+                      අවන්හලකට නොගොස් පාසලේදී පහසුවෙන් බෙන්ටෝ මිලදී ගත හැකිය. <br />
+                      ඔවුන්ගේ දිවා ආහාරය ගෙන එන සිසුන් සඳහා අපි මයික්‍රෝවේව් උදුන් දෙකක් සූදානම් කර ඇත.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <h2><i class="fa-solid fa-tree-city"></i>පාසල අවට</h2>
+                <div class="accordion-arrow">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="accordion-desc">
+                <div class="accordion-desc-text">
+                  <div class="accordion-desc-text__item">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    <p>
+                      අවට පරිසරය හරියට හරි<br />
+                      අවට ප්‍රදේශය හරිත වර්ණයෙන් වට වූ සන්සුන් ස්ථානයකි. සමහර වෙලාවට ක්ලාස් ඉවර උනාට පස්සේ පොඩි ඇවිදින්න
+                      හරි නැරඹුම් බලන්න හරි ගියාට කමක් නෑ.<br />
+                      පාසල අවට ඔබට විනෝද විය හැකි ස්ථාන අපි හඳුන්වා දෙන්නෙමු.<br />
+                      මම හඳුන්වා දීමට කැමති ස්ථානය Hattori Ryokuchi Park. මෙය පුළුල් හා සුන්දර දර්ශන සමඟ ඔබේ මනෝභාවය
+                      වෙනස් කළ හැකි ස්ථානයකි.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- open campus -->
+    <div class="opencampus show-on-scroll left-to-right start">
+      <img class="opencampus-bg" src="./assets/img/opencampus/campus.gif" alt="" />
+      <div class="opencampus-human">
+        <img src="./assets/img/opencampus/human.png" alt="" />
+      </div>
+      <div class="opencampus-logo">
+        <img src="./assets/img/logo/ttl_campus.png" alt="" />
+      </div>
+      <div class="wrapper">
+        <div class="opencampus-img">
+          <img src="./assets/img/opencampus/ttl-oc_pc.png" alt="" />
+        </div>
+        <h2 class="opencampus-text">
+          Open Campus වර්ග දෙකක් තිබේ:<br />
+          Visiting type සහ WEB type.
+        </h2>
+        <a
+          class="opencampus-btn"
+          href="https://www.school-go.info/e0u70m/chuokoosakaform/form.php?fno=93&fsno=1"
+          target="_blank"
+        >
+          ප්‍රවේශය
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+      </div>
+    </div>
+    <!--  suport -->
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start" id="support">
+        <h2 class="wrapper-title"><i class="fa-solid fa-caret-left"></i>සහාය<i class="fa-solid fa-caret-right"></i></h2>
+        <p class="wrapper-desc">Chuo College of Technology OSAKA අධ්‍යාපනය සඳහා පුළුල් සහයෝගයක් ලබා දීම අරමුණු කරයි.</p>
+      </div>
+    </div>
+
+    <div class="support show-on-scroll left-to-right start">
+      <div class="support-container">
+        <div class="support-item">
+          <div class="overlaysup">
+            <div class="overlaysup-text">
+              <h2>1. කාමරයක් සොයා ගැනීම සහ අර්ධකාලීන රැකියාවක් හඳුන්වා දීම</h2>
+              <p>
+                ඔබ දුර බැහැර ප්‍රදේශයක සිට ඔසාකා වෙත ගියද, ඔබට කාමරය ගැන කරදර විය යුතු නැත, ගුරුවරුන් ඔබට කාමරය සොයා
+                ගැනීමට උපකාරී වනු ඇත.
+              </p>
+            </div>
+          </div>
+          <img src="./assets/img/sup/home.JPG" alt="" />
+        </div>
+
+        <div class="support-item">
+          <div class="overlaysup">
+            <div class="overlaysup-text">
+              <h2>2. උපකාරක පන්ති ගාස්තුව</h2>
+              <p>
+                ශිෂ්‍ය වට්ටමක් ඇත. පාසැල ඔබට මගී ප්‍රවේශ පත්‍රයක් ලබා දෙනු ඇත, එබැවින් ඔබට මගී ප්‍රවේශ පත්‍රයක් මිලදී
+                ගැනීමට එය භාවිතා කළ හැක.
+              </p>
+            </div>
+          </div>
+          <img src="./assets/img/sup/ticket.JPG" alt="" />
+        </div>
+        <div class="support-item">
+          <div class="overlaysup">
+            <div class="overlaysup-text">
+              <h2>3. එය කරන්නේ කෙසේද යන්න පිළිබඳව උදව් කරන්න</h2>
+              <p>
+                වීසා අලුත් කිරීම වැනි ක්‍රියා පටිපාටි පිළිබඳව ඔබට කිසියම් ප්‍රශ්නයක් ඇත්නම්, ඔබට ඔබේ ගුරුවරයාගෙන් උපදෙස්
+                ලබා ගත හැක.
+              </p>
+            </div>
+          </div>
+          <img src="./assets/img/sup/suppot1 (2).JPG" alt="" />
+        </div>
+        <div class="support-item">
+          <div class="overlaysup">
+            <div class="overlaysup-text">
+              <h2>4. රැකියා සොයාගැනීම්</h2>
+              <p>
+                පාසැල ඔබට රැකියා සඳහා හඳුන්වා දිය හැකි අතර, ඔබට රැකියාවක් සොයා ගැනීමට උපකාර කිරීම සඳහා බොහෝ අත්දැකීම්
+                ඇති ගුරුවරුන්ගෙන් උපදෙස් සහ පෙනී සිටීම ලබා ගත හැකිය. ඊට අමතරව, ශිෂ්‍යයාගේ ඉල්ලීම අනුව පාසලට රැකියා දීමනා
+                හඳුන්වා දෙනු ලැබේ.
+              </p>
+            </div>
+          </div>
+          <img src="./assets/img/sup/suppot4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- price -->
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start" id="price">
+        <h2 class="wrapper-title">
+          <i class="fa-solid fa-caret-left"></i>උපකාරක පන්ති ගාස්තුව<i class="fa-solid fa-caret-right"></i>
+        </h2>
+        <p class="wrapper-desc">පාලම් පද්ධති ඉංජිනේරු දෙපාර්තමේන්තුව</p>
+      </div>
+      <div class="price-title show-on-scroll left-to-right start">
+        <h3>１．උපකාරක පන්ති ගාස්තුව</h3>
+        <div class="price-desc">
+          <div class="price-desc-item">
+            <i class="fa-regular fa-hand-point-right"></i>
+            <p>
+              ඔසාකාහි සාමාන්‍ය වෘත්තීය පාසල්වලට සාපේක්ෂව පාසල් ගාස්තු සාමාන්‍ය වේ。<br />
+              ※විශේෂාංග: පුහුණු ගාස්තුව උපකාරක ගාස්තුවට ඇතුළත් වේ.
+            </p>
+          </div>
+          <div class="price-desc-item">
+            <i class="fa-regular fa-hand-point-right"></i>
+            <p>විවෘත කැම්පස් වලට සහභාගී වන අය සඳහා යෙන් 20,000තේරීම් ගාස්තුවක් නොමැත.</p>
+          </div>
+          <!-- <div class="price-desc-item">
+            <i class="fa-regular fa-hand-point-right"></i>
+            <p data-scroll>2022.11 වත්මන් තොරතුරු. වෙනස් වීමට යටත් වේ. විස්තර සඳහා කරුණාකර පාසල අමතන්න</p>
+          </div> -->
+
+          <div class="price-desc-item">
+            <i class="fa-regular fa-hand-point-right"></i>
+            <p>
+              ගාස්තු ජපන් යෙන් ඒකකයෙන් දක්වා ඇත <br />
+              (2022.11 වත්මන් තොරතුරු වෙනස් වීමට යටත් වේ. විස්තර සඳහා කරුණාකර පාසල අමතන්න)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="price-img show-on-scroll left-to-right start">
+        <img class="pc-price" src="./assets/img/prices/pc/sir.png" alt="" />
+        <img class="mb-price" src="./assets/img/prices/mobile/sri.png" alt="" />
+      </div>
+      <div class="price-title show-on-scroll left-to-right start">
+        <h3>2. ශිෂ්‍යත්වය</h3>
+        <div class="price-desc">
+          <div class="price-desc-item">
+            <i class="fa-regular fa-hand-point-right"></i>
+            <p>
+              අධ්‍යයන කාර්ය සාධන නිර්ණායක සහ අනධ්‍යයන කාර්ය සාධන නිර්ණායක යන දෙකම සපුරාලන පළමු අධ්‍යයන වාරයේ උපාධි
+              අපේක්ෂක සිසුන් උපකාරක ගාස්තු වලින් නිදහස් වේ. හොඳම: 1 පුද්ගලයෙක් (150,000) විශිෂ්ටයි: පුද්ගලයන් 3ක් දක්වා
+              (100,000)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bonus-container show-on-scroll left-to-right start">
+          <div class="bonus-item">
+            <img src="./assets/img/prices/1.jpg" alt="" />
+          </div>
+          <div class="bonus-item">
+            <img src="./assets/img/prices/2.jpg" alt="" />
+          </div>
+          <div class="bonus-item">
+            <img src="./assets/img/prices/3.jpg" alt="" />
+          </div>
+          <div class="bonus-item">
+            <img src="./assets/img/prices/4.jpg" alt="" />
+          </div>
+          <div class="bonus-item">
+            <img src="./assets/img/prices/5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gakusei koe -->
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start">
+        <h2 class="wrapper-title">
+          <i class="fa-solid fa-caret-left"></i>ශිෂ්‍යහඬ<i class="fa-solid fa-caret-right"></i>
+        </h2>
+        <p class="wrapper-desc">
+          <i class="fa-regular fa-face-laugh-squint"></i>
+          <i class="fa-regular fa-face-grin-wink"></i>
+          <i class="fa-regular fa-face-kiss-beam"></i>
+        </p>
+      </div>
+    </div>
+    <div class="quote show-on-scroll left-to-right start">
+      <div class="quote-icon">
+        <img src="./assets/img/koe/hi.png" alt="" />
+      </div>
+      <div class="wrapper">
+        <div class="quote-container">
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/joshi.jpeg" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                ගුරුවරු කරුණාවන්තයි. පාසල් පහසුකම් නව සහ නවීනයි. එය ජාත්‍යන්තර පන්තියක් බැවින් ඔබට විවිධ රටවල් සමඟ
+                සංස්කෘතික හුවමාරු කර ගත හැකිය.
+              </p>
+              <div class="quote-author"><span>Joshi Raj</span><img src="./assets/img/flag/nepal.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/ninh.jpeg" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                ගුරුවරුන් ඔබට සහාය වනු ඇත, තනිවම නොවේ! ගුරුවරුන් රැකියා තොරතුරු, සම්මුඛ පරීක්ෂණ පුහුණුවීම්, සංක්ෂිප්ත
+                සැසි ආදිය සඳහා නිසි ලෙස සහාය දෙනු ඇත.
+              </p>
+              <div class="quote-author">
+                <span>Pham Thi Ninh</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/kar.JPG" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                N2 (N1) ට අමතරව, BJT, TOEIC, සහ රියදුරු බලපත්‍රයක් වැනි සුදුසුකම් ලබා ගැනීම වඩා හොඳය!
+              </p>
+
+              <div class="quote-author">
+                <span>Karki Prabhakar</span><img src="./assets/img/flag/nepal.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/tra.jpg" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                ශිෂ්‍යයන් හොඳින් ඇසුරු කළා, ක්‍රියාශීලීව පන්තිවලට සහභාගි වුණා, ඉගෙනීමෙන් සතුටක් ලැබුවා. සැබෑ කාර්යය
+                අත්විඳීමට හැකිවීම සතුටක්.
+              </p>
+              <div class="quote-author">
+                <span>Nguyen Thi Tra</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/minh.jpg" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                පන්තියෙන් පිටත, ස්වේච්ඡා ක්‍රියාකාරකම්, අධ්‍යයන චාරිකා සහ ක්‍රීඩා තරඟ වැනි විෂය බාහිර ක්‍රියාකාරකම්
+                රාශියක් ඇත. එය විනෝදජනක විය.
+              </p>
+              <div class="quote-author">
+                <span>Nguyen Van Minh</span><img src="./assets/img/flag/vietnam.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-item">
+            <div class="quote-img"><img src="./assets/img/koe/hansi.jpg" /></div>
+            <div class="quote-info">
+              <p class="quote-desc">
+                මම දැනට Bridge System Engineering Course එකේ ඉගෙන ගන්නවා. බොහොම අමාරුවෙන් රස්සාවක් කරගත්තත් ගුරුවරුන්ට
+                ස්තූති ව වෙන්න අන්තිමට මට රස්සාවක් ලැබුන එක ගැන ගොඩක් සතුටුයි. ගුරුවරුන්ට මගේ අවංක කෘතඥතාව පළ කිරීමට
+                කැමැත්තෙමි. දැනට පාසල් අධ්‍යාපනය ලබන හෝ පාසලට ඇතුළත් වීමට සිතන ඔබ සැමට, කරුණාකර ඔබගේ කාලයෙන් උපරිම
+                ප්‍රයෝජන ගෙන, හොඳින් පන්ති පවත්වමින්, ඔබගේ අධ්‍යයන කටයුතු කරගෙන යාමට හැකි උපරිමය කරන්න.
+              </p>
+              <div class="quote-author">
+                <span>Hansi Perera</span><img src="./assets/img/flag/sirlanka.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- event -->
+    <div class="wrapper">
+      <div class="wrapper-top show-on-scroll zoom start">
+        <h2 class="wrapper-title" id="event">
+          <i class="fa-solid fa-caret-left"></i>සිදුවීම<i class="fa-solid fa-caret-right"></i>
+        </h2>
+        <p class="wrapper-desc">
+          <i class="fa-regular fa-face-grin-tongue-wink"></i>
+          <i class="fa-regular fa-face-laugh-squint"></i>
+          <i class="fa-regular fa-face-kiss-beam"></i>
+        </p>
+      </div>
+    </div>
+    <div class="event">
+      <ul class="event-list">
+        <li class="event-item"><img src="./assets/img/event/event1.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event2.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event3.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event4.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event5.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event6.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event7.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport1.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport10.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport11.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport4.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai1.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai2.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai3.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai4.jpg" alt="" /></li>
+
+        <li class="event-item"><img src="./assets/img/event/event1.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event2.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event3.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <div class="event2">
+      <ul class="event2-list">
+        <li class="event-item"><img src="./assets/img/class/class5.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport2.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport3.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport5.JPG" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport6.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport7.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport8.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/sport/sport9.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event8.jpeg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event9.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event10.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai1.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai2.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event11.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/kaigai/kaigai4.jpg" alt="" /></li>
+
+        <li class="event-item"><img src="./assets/img/event/event1.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event2.jpg" alt="" /></li>
+        <li class="event-item"><img src="./assets/img/event/event3.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <!-- footer layout -->
+    <footer class="show-on-scroll left-to-right start">
+      <div class="footer-img">
+        <img src="./assets/img/png/human5.png" class="footer-human1" alt="" />
+        <img src="./assets/img/png/human6.png" class="footer-human2" alt="" />
+      </div>
+      <div class="footer-top">
+        <div class="wrapper">
+          <div class="footer-top__logo"><img src="./assets/img/logo/logo1.png" alt="" /></div>
+          <div class="location">
+            <p class="footer-top__location">
+              Osaka fu Toyonakashi Terauchi 1 chome 1-43 (1gou kan)<a
+                href="https://www.google.co.jp/maps/place/%E4%B8%AD%E5%A4%AE%E5%B7%A5%E5%AD%A6%E6%A0%A1%EF%BC%AF%EF%BC%B3%EF%BC%A1%EF%BC%AB%EF%BC%A1/@34.7758642,135.4914697,20z/data=!4m5!3m4!1s0x6000e4d99bec1847:0xa8f6c2fb08d6fa46!8m2!3d34.7754802!4d135.4912836?hl=ja"
+                target="_blank"
+                >Google Map</a
+              >
+            </p>
+            <p class="footer-top__location">
+              Osaka fu Toyonakashi Terauchi 1 chome 3-11 (2gou kan)<a
+                href="https://www.google.co.jp/maps/place/%E4%B8%AD%E5%A4%AE%E5%B7%A5%E5%AD%A6%E6%A0%A1OSAKA2%E5%8F%B7%E9%A4%A8/@34.7749068,135.4898352,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e5d50ee24cd9:0x8b584ccfdc353046!8m2!3d34.7749024!4d135.4920239?hl=ja&shorturl=1"
+                >Google Map</a
+              >
+            </p>
+          </div>
+          <div class="footer-top__icon">
+            <ul class="header-top-content__info">
+              <li class="header-top-content__info-link">
+                <a href="https://www.facebook.com/StudyinJapanCCTO"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+
+              <li class="header-top-content__info-link">
+                <a href="https://www.instagram.com/ccto_kokusai/"><i class="fa-brands fa-instagram ig"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="wrapper">
+          <ul class="footer-main__list">
+            <li><a href="#about">දෙපාර්තමේන්තුව හැඳින්වීම</a></li>
+            <li><a href="#course">ඉගෙනීමේ විශේෂාංග</a></li>
+            <li><a href="#review">පාසල් හැඳින්වීම</a></li>
+            <li><a href="#support">සහාය</a></li>
+            <li><a href="#price">ටියුෂන්</a></li>
+          </ul>
+          <div class="footer-main__map">
+            <img src="./assets/img/map/access_walk.jpg" alt="" />
+            <img src="./assets/img/map/access_train.jpg" alt="" />
+          </div>
+        </div>
+        <div class="footer-main__assess">
+          <a href="mailto:kokusai@chuoko-osaka.ac.jp"><span>විද්යුත් තැපැල් ලිපිනය:</span>kokusai@chuoko-osaka.ac.jp</a>
+          <p><span>දුරකථන අංකය:</span>06-6866-0808</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2022 Department of Bridge System Engineering</p>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-human-top">
+        <img src="./assets/img/png/mhuman1.png" alt="" />
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-text">දැන් එක්වන්න！！！</h2>
+        <h2 class="modal-year">2022වර්ෂය</h2>
+        <img src="./assets/img/png/human4.png" class="modal-human" alt="" />
+        <i class="fa fa-times modal-close"></i>
+        <img src="./assets/img/logo/ttl_campus.png" alt="" />
+        <a
+          href="https://www.school-go.info/e0u70m/chuokoosakaform/form.php?fno=93&fsno=1"
+          target="_blank"
+          class="modal-btn"
+          >අයදුම්පත<i class="fa-solid fa-right-to-bracket"></i
+        ></a>
+      </div>
+    </div>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -13,6 +13,33 @@ document.addEventListener('click', function (event) {
     menuToggle.classList.add('fa-bars-staggered');
   }
 });
+let elToShow = document.querySelectorAll('.show-on-scroll');
+
+let isElInViewPort = (el) => {
+  let rect = el.getBoundingClientRect();
+  // some browsers support innerHeight, others support documentElement.clientHeight
+  let viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  return (
+    (rect.top <= 0 && rect.bottom >= 0) ||
+    (rect.bottom >= viewHeight && rect.top <= viewHeight) ||
+    (rect.top >= 0 && rect.bottom <= viewHeight)
+  );
+};
+
+function loop() {
+  elToShow.forEach((item) => {
+    if (isElInViewPort(item)) {
+      item.classList.add('start');
+    } else {
+      item.classList.remove('start');
+    }
+  });
+}
+
+window.onscroll = loop;
+
+loop();
 //scroll top
 const scrollUp = document.querySelector('.scroll-top');
 window.addEventListener('scroll', function () {
@@ -69,7 +96,7 @@ $(document).ready(function () {
   $(window).on('load', function () {
     setTimeout(function () {
       $('.loader-wrapper').fadeOut(1000);
-    }, 5000);
+    }, 3000);
   });
   $('.course-img').hover(
     function () {
@@ -144,7 +171,7 @@ $(document).ready(function () {
 });
 
 // scroll animation
-ScrollReveal({ reset: true, distance: '60px', duration: 1600, delay: 100 });
+ScrollReveal({ reset: true, distance: '20px', duration: 1600, delay: 50 });
 ScrollReveal().reveal(
   '.wrapper-title, .wrapper-desc, .course-left-title, .about-content, .introduce-video, .price-title h3, .banner-text-content, .quote, .footer-human1',
   {

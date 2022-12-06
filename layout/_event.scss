@@ -8,6 +8,9 @@
   @include tablet {
     height: auto;
   }
+  @include mobile {
+    height: 100px;
+  }
 }
 
 .event-list {
@@ -58,7 +61,7 @@
   overflow: hidden;
   position: relative;
   @include mobile {
-    height: 10vh;
+    height: 100px;
   }
 }
 
